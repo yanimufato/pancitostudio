@@ -9,6 +9,10 @@
 
 @import "responsive";
 
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: #d3d0dd;
     a:link, a:visited, a:active {
@@ -17,15 +21,20 @@ body {
     header .logo{
         display: flex;
         justify-content: center;
+        margin-top: 100px;
     }
     .cuerpo {
         h1 {
             display: flex;
             justify-content: center;
+            text-transform: uppercase;
+            font-family: 'Paytone One', sans-serif
+
         }
         p {
             display: flex;
             justify-content: center;
+
         }
         .container {
             display: flex;

@@ -7,9 +7,36 @@
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 767px) { /*movil*/ }
+@media screen and (max-width: 767px) { /*movil*/
+  body .cuerpo h1 {
+    margin: 100px 0px 70px;
+    font-size: 5.5em;
+    text-align: center;
+  }
+  body .cuerpo p {
+    width: 280px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+  }
+  body .cuerpo .container {
+    margin: 100px 0px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/ }
-@media screen and (min-width: 1200px) { /*laptop*/ }
+@media screen and (min-width: 1200px) { /*laptop*/
+  body .cuerpo h1 {
+    margin: 50px 0px;
+  }
+  body .cuerpo p {
+    width: 120px;
+    color: aquamarine;
+  }
+}
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #d3d0dd;
 }
@@ -19,10 +46,13 @@ body a:link, body a:visited, body a:active {
 body header .logo {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 body .cuerpo h1 {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
+  font-family: "Paytone One", sans-serif;
 }
 body .cuerpo p {
   display: flex;
