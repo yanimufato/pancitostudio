@@ -11,53 +11,91 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #d3d0dd;
     a:link, a:visited, a:active {
         text-decoration: none;
     }
-    header .logo{
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
+    .navbar {        
+        background-color: #0000ff;
+        .container-fluid {
+            height: 100%;
+            .navbar-brand {
+                color: white;
+                font-weight: 700;
+            }
+        }      
     }
-    .cuerpo {
-        h1 {
+    .info {
+        .logo{
+            width: 100%;
             display: flex;
-            justify-content: center;
-            text-transform: uppercase;
-            font-family: 'Paytone One', sans-serif
-
+            justify-content:flex-start;
         }
-        p {
-            display: flex;
-            justify-content: center;
-
+        h1 {            
+            text-transform: uppercase;
+            font-family: 'Paytone One', sans-serif;
+            .colorTitulo {
+                color: #0000ff;
+            }
+        }
+        .presentacion {
+            width: 100%;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+        }
+        a {
+            background-color: black;
+            padding: 15px;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+        }
+        a:hover {
+            background-color: #0000ff;
+            color: white;
+        }
+        .avisoConstruccion {
+            background-color: #0000ff;
+            color: white;
+            width: 100%;
+            text-transform: uppercase;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
         }
         .container {
             display: flex;
             justify-content: center;
                 .encabezado {
-                text-transform: uppercase;
-                font-weight: 700;
-                color: #ced17f;
-                }
-                .row {
-                    width: 1200px;
-                }
-                .form-group {
-                    font-size: 6rem;
+                    font-family: 'Roboto', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 2em;
+                    font-weight: 700;
+                    color: #0000ff;
                 }
                 .btn-primary {
-                    background-color: #ced17f;
-                    color: #eae9e7;
+                    background-color: #0000ff;
+                    color: white;
                     font-weight: 700;
                     border: none;
-                    margin-top: -10px;
+                    
                 }
+                .form-group { 
+                    padding: 15px 0px;
+                }
+
         }
         
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #0000ff;
+        color: white;
+        height: 70px;
     }
 }

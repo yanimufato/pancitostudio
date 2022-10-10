@@ -8,75 +8,191 @@
 }
 
 @media screen and (max-width: 767px) { /*movil*/
-  body .cuerpo h1 {
-    margin: 100px 0px 70px;
-    font-size: 5.5em;
-    text-align: center;
+  body .navbar { /*navbar*/
+    width: 100%;
+    padding: 0px;
+    position: fixed;
+    z-index: 100;
   }
-  body .cuerpo p {
-    width: 280px;
-    text-align: center;
-    margin: auto;
+  body .navbar .container-fluid .navbar-brand {
+    margin: 15px 0px 0px 15px;
+    padding: 0px;
+  }
+  body .navbar .container-fluid .navbar-toggler {
+    background-color: white;
+    border: none;
+  }
+  body .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    color: none;
+  }
+  body .navbar .container-fluid .navbar-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #0000FF;
+    color: white;
+    padding: 0px 0px 0px 15px;
+    text-transform: uppercase;
     font-size: 1.5em;
+    font-weight: 500;
   }
-  body .cuerpo .container {
-    margin: 100px 0px;
+  body .navbar .gradient2 {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom left, #0000FF 50%, white 50%);
+  }
+  body .info .logo {
+    margin: 150px 0px 50px 12px;
+  }
+  body .info h1 {
+    width: 100%;
+    margin: 0px 0px 10px 30px;
+    padding: 10px 0px;
+    font-size: 5.5em;
+    text-align: left;
+  }
+  body .info .presentacion {
+    margin: 0px 0px 30px 30px;
+    padding: 0px 30px 0px 0px;
+    font-size: 1.5em;
+    line-height: 2;
+  }
+  body .info a {
+    margin: 0px 0px 0px 30px;
+  }
+  body .info .gradient1 {
+    margin: 120px 0px 0px 0px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top right, #0000FF 50%, white 50%);
+  }
+  body .info .avisoConstruccion {
+    margin: auto;
+    padding: 30px;
+    font-size: 2em;
+    line-height: 2;
+  }
+  body .info .container {
+    margin: 150px 0px 50px;
+  }
+  body .info .container .encabezado {
+    text-align: left;
+  }
+  body .info .container .form-group .btn-primary {
+    width: 250px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/ }
 @media screen and (min-width: 1200px) { /*laptop*/
-  body .cuerpo h1 {
-    margin: 50px 0px;
+  body .cuerpo .titulo {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 70px;
+    font-size: 5.5em;
+    text-align: center;
+    padding: 10px;
+  }
+  body .cuerpo .gradient1 {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top right, #0000FF 50%, white 50%);
+  }
+  body .cuerpo .gradient2 {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom left, #0000FF 50%, white 50%);
   }
   body .cuerpo p {
-    width: 120px;
-    color: aquamarine;
+    background-color: #0000ff;
+    color: white;
+    width: 600px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    padding: 15px;
+    font-size: 1.5em;
+    line-height: 2;
   }
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
-body {
-  background-color: #d3d0dd;
-}
 body a:link, body a:visited, body a:active {
   text-decoration: none;
 }
-body header .logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+body .navbar {
+  background-color: #0000ff;
 }
-body .cuerpo h1 {
+body .navbar .container-fluid {
+  height: 100%;
+}
+body .navbar .container-fluid .navbar-brand {
+  color: white;
+  font-weight: 700;
+}
+body .info .logo {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+body .info h1 {
   text-transform: uppercase;
   font-family: "Paytone One", sans-serif;
 }
-body .cuerpo p {
-  display: flex;
-  justify-content: center;
+body .info h1 .colorTitulo {
+  color: #0000ff;
 }
-body .cuerpo .container {
-  display: flex;
-  justify-content: center;
+body .info .presentacion {
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
 }
-body .cuerpo .container .encabezado {
+body .info a {
+  background-color: black;
+  padding: 15px;
+  color: white;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #ced17f;
+  letter-spacing: 0.3em;
 }
-body .cuerpo .container .row {
-  width: 1200px;
+body .info a:hover {
+  background-color: #0000ff;
+  color: white;
 }
-body .cuerpo .container .form-group {
-  font-size: 6rem;
+body .info .avisoConstruccion {
+  background-color: #0000ff;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
 }
-body .cuerpo .container .btn-primary {
-  background-color: #ced17f;
-  color: #eae9e7;
+body .info .container {
+  display: flex;
+  justify-content: center;
+}
+body .info .container .encabezado {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+  color: #0000ff;
+}
+body .info .container .btn-primary {
+  background-color: #0000ff;
+  color: white;
   font-weight: 700;
   border: none;
-  margin-top: -10px;
+}
+body .info .container .form-group {
+  padding: 15px 0px;
+}
+body .footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0000ff;
+  color: white;
+  height: 70px;
 }
