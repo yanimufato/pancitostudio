@@ -9,14 +9,16 @@
 
 @media screen and (max-width: 767px) { /*movil*/
   body .navbar { /*navbar*/
+    background-color: #0000ff;
     width: 100%;
     padding: 0px;
     position: fixed;
     z-index: 100;
   }
   body .navbar .container-fluid .navbar-brand {
+    color: white;
     margin: 10px 0px 0px 15px;
-    padding: 0px;
+    padding: 20px 0px 25px;
   }
   body .navbar .container-fluid .navbar-toggler {
     background-color: white;
@@ -33,49 +35,64 @@
     font-size: 1.5em;
     font-weight: 500;
   }
-  body .navbar .gradient2 {
+  body .info .presentacionPancito {
+    padding-bottom: 20px;
+  }
+  body .info .presentacionPancito .logo {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-    height: 50px;
-    background: linear-gradient(to bottom left, #0000FF 50%, white 50%);
+    margin: 180px 0px 50px 12px;
   }
-  body .info .logo {
-    margin: 150px 0px 50px 12px;
-  }
-  body .info h1 {
+  body .info .presentacionPancito h1 {
     width: 100%;
     margin: 0px 0px 40px 30px;
     padding: 10px 0px;
     font-size: 5.5em;
     text-align: left;
   }
-  body .info .presentacion {
-    margin: 0px 0px 30px 30px;
+  body .info .presentacionPancito .presentacion {
+    width: 100%;
+    margin: 0px 0px 50px 30px;
     padding: 0px 30px 0px 0px;
     font-size: 1.5em;
     line-height: 2;
   }
-  body .info a {
+  body .info .presentacionPancito .escribinos {
+    padding: 15px;
+  }
+  body .info .presentacionPancito a {
+    width: 100%;
     margin: 0px 0px 0px 30px;
   }
-  body .info .gradient1 {
-    margin: 120px 0px 0px 0px;
+  body .info .informacionPancito .gradient1 {
+    margin: 50px 0px 0px 0px;
     width: 100%;
     height: 50px;
     background: linear-gradient(to top right, #0000FF 50%, white 50%);
   }
-  body .info .avisoConstruccion {
+  body .info .informacionPancito .avisoConstruccion {
     margin: auto;
     padding: 30px;
+    text-align: left;
     font-size: 2em;
     line-height: 2;
   }
-  body .info .container {
-    margin: 100px 0px 20px;
+  body .info .informacionPancito .gradient2 {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom left, #0000FF 50%, white 50%);
   }
-  body .info .container .encabezado {
+  body .info .informacionPancito .container {
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 80px 0px 20px 30px;
+  }
+  body .info .informacionPancito .container .encabezado {
     text-align: left;
   }
-  body .info .container .form-group .btn-primary {
+  body .info .informacionPancito .container .form-group .btn-primary {
     width: 250px;
   }
   .gradient1 {
@@ -85,18 +102,126 @@
     background: linear-gradient(to top right, #0000FF 50%, white 50%);
   }
   .footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0000ff;
-    color: white;
-    height: 70px;
     padding: 10px 0px 0px;
+  }
+  .footer p {
+    margin-bottom: 5px;
   }
   .footer .tituloFooter {
     font-weight: 500;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/ }
+@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
+  body .navbar { /*navbar*/
+    background-color: #0000ff;
+    width: 100%;
+    padding: 0px;
+    position: fixed;
+    z-index: 100;
+  }
+  body .navbar .container-fluid .navbar-brand {
+    color: white;
+    margin: 10px 0px 0px 15px;
+    padding: 20px 0px 25px;
+  }
+  body .navbar .container-fluid .navbar-toggler {
+    background-color: white;
+    margin: 10px 15px 0px;
+    border: none;
+  }
+  body .navbar .container-fluid .navbar-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #0000FF;
+    color: white;
+    padding: 0px 0px 0px 15px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  body .info .presentacionPancito {
+    padding-bottom: 20px;
+  }
+  body .info .presentacionPancito .logo {
+    width: 350px;
+    margin: 180px 200px 50px 150px;
+  }
+  body .info .presentacionPancito .logo img {
+    width: 350px;
+  }
+  body .info .presentacionPancito h1 {
+    width: 100%;
+    margin: 0px 0px 30px 150px;
+    padding: 15px 0px;
+    font-size: 8em;
+    line-height: 1.2;
+    text-align: left;
+  }
+  body .info .presentacionPancito h1 .saltoLinea {
+    display: block;
+    padding: 10px 0px;
+  }
+  body .info .presentacionPancito .presentacion {
+    width: 400px;
+    margin: 0px 0px 50px 150px;
+    padding: 0px 30px 0px 0px;
+    font-size: 2.5em;
+    line-height: 2;
+  }
+  body .info .presentacionPancito .escribinos {
+    padding: 15px;
+  }
+  body .info .presentacionPancito a {
+    width: 100%;
+    margin: 0px 0px 0px 150px;
+  }
+  body .info .informacionPancito .gradient1 {
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top right, #0000FF 50%, white 50%);
+  }
+  body .info .informacionPancito .avisoConstruccion {
+    margin: 0px;
+    padding: 60px 150px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2;
+  }
+  body .info .informacionPancito .gradient2 {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom left, #0000FF 50%, white 50%);
+  }
+  body .info .informacionPancito .container {
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 80px 0px 20px 150px;
+  }
+  body .info .informacionPancito .container .encabezado {
+    text-align: left;
+  }
+  body .info .informacionPancito .container .form-group .btn-primary {
+    width: 250px;
+  }
+  .gradient1 {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top right, #0000FF 50%, white 50%);
+  }
+  .footer {
+    padding: 10px 0px 0px;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  }
+  .footer .tituloFooter {
+    font-weight: 500;
+  }
+}
 @media screen and (min-width: 1200px) { /*laptop*/
   body .cuerpo .titulo {
     display: flex;
@@ -136,72 +261,59 @@ html {
 body a:link, body a:visited, body a:active {
   text-decoration: none;
 }
-body .navbar {
-  background-color: #0000ff;
-}
 body .navbar .container-fluid {
   height: 100%;
 }
 body .navbar .container-fluid .navbar-brand {
-  color: white;
   font-weight: 700;
 }
-body .info .logo {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+body .info .presentacionPancito {
+  height: 100%;
 }
-body .info h1 {
+body .info .presentacionPancito h1 {
   text-transform: uppercase;
   font-family: "Paytone One", sans-serif;
 }
-body .info h1 .colorTitulo {
+body .info .presentacionPancito h1 .colorTitulo {
   color: #0000ff;
 }
-body .info .presentacion {
-  width: 100%;
+body .info .presentacionPancito .presentacion {
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
-body .info a {
+body .info .presentacionPancito a {
   background-color: black;
-  padding: 15px;
   color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 0.3em;
 }
-body .info a:hover {
+body .info .presentacionPancito a:hover {
   background-color: #0000ff;
   color: white;
 }
-body .info .avisoConstruccion {
+body .info .informacionPancito .avisoConstruccion {
   background-color: #0000ff;
   color: white;
   width: 100%;
   text-transform: uppercase;
-  text-align: left;
   font-family: "Roboto", sans-serif;
 }
-body .info .container {
-  display: flex;
-  justify-content: center;
-}
-body .info .container .encabezado {
+body .info .informacionPancito .container .encabezado {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 700;
   color: #0000ff;
 }
-body .info .container .btn-primary {
+body .info .informacionPancito .container .btn-primary {
   background-color: #0000ff;
   color: white;
   font-weight: 700;
   border: none;
 }
-body .info .container .form-group {
+body .info .informacionPancito .container .form-group {
   padding: 15px 0px;
 }
 body .footer {
