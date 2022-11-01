@@ -20,16 +20,18 @@ body {
     }
     .navbar { /*navbar*/
         width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: #eae9e7;
+
+        background-color: #0000ff;
+        .navbar-brand {
+            font-weight: 700;
+        }
         .navbar-nav {            
             text-transform: uppercase;
             .nav-link {
                 width: 100%;
-                color: #503748;
+                color: #ffffff;
                 font-weight: 700;
-                padding: 5px 40px;
+                padding: 5px 27px;
             }
         }        
     }
