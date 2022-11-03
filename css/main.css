@@ -26,6 +26,13 @@
   }
   body .navbar .navbar-nav {
     font-size: 1rem;
+    padding: 10px 0px 0px 27px;
+  }
+  body .navbar .navbar-nav .nav-item {
+    padding: 10px 0px 0px;
+  }
+  body .navbar .navbar-nav img {
+    width: 20px;
   }
   body .navbar .navbar-link {
     padding: 0px;
@@ -36,8 +43,7 @@
   body .info .presentacionPancito .logo {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
-    margin: 180px 0px 50px 20px;
+    margin: 130px 30px 20px 20px;
   }
   body .info .presentacionPancito h1 {
     width: 100%;
@@ -47,9 +53,9 @@
     text-align: left;
   }
   body .info .presentacionPancito .presentacion {
-    width: 100%;
+    width: 250px;
     margin: 0px 0px 50px 30px;
-    padding: 0px 30px 0px 0px;
+    padding: 0px;
     font-size: 1.5em;
     line-height: 2;
   }
@@ -112,7 +118,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) { /*tablet*/
   body .navbar {
-    padding: 15px 40px;
+    padding: 20px 40px 0px;
     position: fixed;
     z-index: 100;
     display: flex;
@@ -123,10 +129,24 @@
     margin-left: 27px;
   }
   body .navbar-collapse {
-    margin-left: 150px;
+    margin-left: 135px;
   }
   body .navbar-nav {
     font-size: 1rem;
+  }
+  body .navbar-nav .nav-item {
+    padding: 0px 15px;
+  }
+  body .navbar-nav .nav-item .nav-link {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  body .navbar-nav .nav-item .link-padding {
+    padding: 20px 0px 0px;
+  }
+  body .navbar-nav img {
+    width: 20px;
+    padding: 20px 0px;
   }
   body .navbar-link {
     padding: 0px 0px;
@@ -223,22 +243,39 @@
 }
 @media screen and (min-width: 1024px) { /*laptop*/
   body .navbar {
-    padding: 15px 40px;
+    padding: 20px 40px 0px;
     position: fixed;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
   }
   body .navbar-brand {
     width: 200px;
-    margin-left: 27px;
+    margin-left: 60px;
   }
   body .navbar-collapse {
-    margin-left: 900px;
+    width: 500px;
+    margin: 0px 30px 0px 800px;
   }
   body .navbar-nav {
     font-size: 1rem;
   }
-  body .navbar-link {
+  body .navbar-nav .nav-item {
+    padding: 0px 20px;
+  }
+  body .navbar-nav .nav-item .nav-link {
+    width: 100%;
     padding: 0px 0px;
+  }
+  body .navbar-nav .nav-item .link-padding {
+    padding: 23px 0px 0px;
+  }
+  body .navbar-nav img {
+    width: 20px;
+    padding: 20px 0px;
+  }
+  body .navbar-link {
+    padding: 0px;
   }
   body .info .presentacionPancito {
     display: grid;
@@ -248,7 +285,7 @@
   body .info .presentacionPancito .logo {
     grid-area: logo;
     width: 350px;
-    margin: 350px 20px 0px 300px;
+    margin: 250px 20px 80px 300px;
   }
   body .info .presentacionPancito .logo img {
     width: 350px;
@@ -277,8 +314,8 @@
     grid-area: a;
     width: 150px;
     height: 50px;
-    padding: 15px 30px;
-    margin: 30px 0px 0px 15px;
+    padding: 17px 30px;
+    margin: 10px 0px 0px 15px;
   }
   body .info .informacionPancito .gradient1 {
     margin: 50px 0px 0px 0px;
@@ -306,7 +343,7 @@
     padding: 0px;
     display: flex;
     justify-content: flex-start;
-    margin: 80px 0px 20px 150px;
+    margin: 80px 0px 20px 300px;
   }
   body .info .informacionPancito .container .encabezado {
     text-align: left;
@@ -325,12 +362,22 @@
     background: linear-gradient(to top right, #0000FF 50%, white 50%);
   }
   .footer {
-    padding: 10px 0px 0px;
+    margin-top: 150px;
+    padding: 30px 30px 0px;
+  }
+  .footer .footerInfo {
+    margin-left: 65px;
+  }
+  .footer .footerDireccion {
+    text-align: right;
+    margin-right: 90px;
   }
   .footer p {
+    font-size: 1.3em;
     margin-bottom: 5px;
   }
   .footer .tituloFooter {
+    font-size: 1.5em;
     font-weight: 500;
   }
 }
@@ -356,7 +403,6 @@ body .navbar .navbar-nav .nav-link {
   width: 100%;
   color: #ffffff;
   font-weight: 700;
-  padding: 5px 27px;
 }
 body .info .presentacionPancito {
   height: 100%;
@@ -371,6 +417,7 @@ body .info .presentacionPancito h1 .colorTitulo {
 body .info .presentacionPancito .presentacion {
   text-align: left;
   font-family: "Roboto", sans-serif;
+  font-weight: 200;
 }
 body .info .presentacionPancito a {
   background-color: black;
@@ -406,12 +453,23 @@ body .info .informacionPancito .container .btn {
   border-style: none;
   border-radius: 0%;
 }
+body .info .informacionPancito .container .btn:hover {
+  background-color: #0000ff;
+  color: #ffffff;
+}
 body .info .informacionPancito .container .form-group {
   padding: 15px 0px;
 }
+body .info .informacionPancito .container .form-group .form-control {
+  border: 2px solid #000000;
+  letter-spacing: 0.2em;
+}
+body .info .informacionPancito .container .form-group .form-control:hover {
+  border: 2px solid #0000ff;
+}
 body .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #0000ff;
   color: white;
   height: 100px;

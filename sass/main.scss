@@ -20,7 +20,6 @@ body {
     }
     .navbar { /*navbar*/
         width: 100%;
-
         background-color: #0000ff;
         .navbar-brand {
             font-weight: 700;
@@ -30,8 +29,7 @@ body {
             .nav-link {
                 width: 100%;
                 color: #ffffff;
-                font-weight: 700;
-                padding: 5px 27px;
+                font-weight: 700;                
             }
         }        
     }
@@ -49,6 +47,7 @@ body {
             .presentacion {
                 text-align: left;
                 font-family: 'Roboto', sans-serif;
+                font-weight: 200;
             }
             a {
                 background-color: black;
@@ -89,8 +88,19 @@ body {
                         border-radius: 0%;
                         
                     }
+                    .btn:hover {
+                        background-color: #0000ff;
+                        color: #ffffff;
+                    }
                     .form-group { 
                         padding: 15px 0px;
+                        .form-control {
+                            border: 2px solid #000000;
+                            letter-spacing: 0.2em;
+                        }
+                        .form-control:hover {
+                            border: 2px solid #0000ff; 
+                        }
                     }
     
             }
@@ -100,7 +110,7 @@ body {
     }
     .footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: #0000ff;
         color: white;
         height: 100px;

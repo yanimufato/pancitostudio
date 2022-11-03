@@ -18,6 +18,14 @@
              }
              .navbar-nav {
                  font-size: 1rem;
+                 padding: 10px 0px 0px 27px;
+                 .nav-item {
+                    padding: 10px 0px 0px;
+                 }
+                 img {
+                    
+                    width: 20px;
+                }
              }
              .navbar-link {
                  padding: 0px;
@@ -28,9 +36,8 @@
                 padding-bottom: 20px;   
                 .logo {
                     display: flex;
-                    justify-content:flex-start;
-                    width: 100%;
-                    margin: 180px 0px 50px 20px;
+                    justify-content:flex-start;                    
+                    margin: 130px 30px 20px 20px;
                 }
                 h1 {
                     width: 100%;
@@ -40,9 +47,9 @@
                     text-align: left;
                     }
                 .presentacion {
-                    width: 100%;
+                    width: 250px;
                     margin: 0px 0px 50px 30px;
-                    padding: 0px 30px 0px 0px;
+                    padding: 0px;
                     font-size: 1.5em;
                     line-height: 2;
                 } 
@@ -113,7 +120,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px ) { /*tablet*/
     body {
         .navbar {
-            padding: 15px 40px;
+            padding: 20px 40px 0px;
             position: fixed;
             z-index: 100;
             display: flex;
@@ -124,10 +131,25 @@
             margin-left: 27px;            
         }
         .navbar-collapse {
-            margin-left: 150px;
+            margin-left: 135px;
         }
         .navbar-nav {
             font-size: 1rem;
+           
+            .nav-item {
+                padding: 0px 15px;
+                .nav-link {
+                    width: 100%;
+                    padding: 0px 0px;
+                }
+                .link-padding {
+                    padding: 20px 0px 0px;
+                }
+            }
+            img {
+                width: 20px; 
+                padding: 20px 0px;
+            }
         }
         .navbar-link {
             padding: 0px 0px;
@@ -239,22 +261,40 @@
 @media screen and (min-width: 1024px) { /*laptop*/
     body {
         .navbar {
-            padding: 15px 40px;
+            padding: 20px 40px 0px;
             position: fixed;
             z-index: 100;
+            display: flex;
+            justify-content: space-between;
         }
         .navbar-brand {
             width: 200px;
-            margin-left: 27px;            
+            margin-left: 60px;            
         }
         .navbar-collapse {
-            margin-left: 900px;
+            width: 500px;
+            margin: 0px 30px 0px 800px;
         }
         .navbar-nav {
             font-size: 1rem;
+                       
+            .nav-item {
+                padding: 0px 20px;
+                .nav-link {
+                    width: 100%;
+                    padding: 0px 0px;
+                }
+                .link-padding {
+                    padding: 23px 0px 0px;
+                }
+            }
+            img {
+                width: 20px; 
+                padding: 20px 0px;
+            }
         }
         .navbar-link {
-            padding: 0px 0px;
+            padding: 0px;
         }
         .info {
             .presentacionPancito {
@@ -268,7 +308,7 @@
                 .logo {  
                     grid-area: logo;
                     width: 350px;                  
-                    margin: 350px 20px 0px 300px;
+                    margin: 250px 20px 80px 300px;
                     img {
                         width: 350px;
                     }
@@ -297,8 +337,8 @@
                     grid-area: a;
                     width: 150px;
                     height: 50px;
-                    padding: 15px 30px;
-                    margin: 30px 0px 0px 15px;
+                    padding: 17px 30px;
+                    margin: 10px 0px 0px 15px;
                 }
                 
             }
@@ -329,7 +369,7 @@
                     padding: 0px;
                     display: flex;
                     justify-content: flex-start;
-                    margin: 80px 0px 20px 150px;
+                    margin: 80px 0px 20px 300px;
                     .encabezado {
                         text-align: left;
                         font-size: 2.5em;
@@ -352,12 +392,22 @@
         height: 50px;
         background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
     } 
-    .footer {
-        padding: 10px 0px 0px;
+    .footer {  
+        margin-top: 150px;    
+        padding: 30px 30px 0px;
+        .footerInfo {
+            margin-left: 65px;
+        }
+        .footerDireccion {
+            text-align: right;
+            margin-right: 90px;
+        }
         p {
+            font-size: 1.3em;
             margin-bottom: 5px;
         }
         .tituloFooter {
+            font-size: 1.5em;
             font-weight: 500;
         }
         
