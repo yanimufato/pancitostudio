@@ -47,7 +47,12 @@ body {
             .presentacion {
                 text-align: left;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 200;
+                font-weight: 500;
+            }
+            .presentacion::after {
+                content: "Es por eso que construimos sitios de fácil navegación, sintéticos y visualmente armónicos.";
+                background-color: #0000ff;
+                color: #ffffff;
             }
             a {
                 background-color: black;
@@ -67,8 +72,10 @@ body {
                 background-color: #0000ff;
                 color: white;
                 width: 100%;
-                text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
+                .avisoTamaño {
+                    font-size: 1.4em;
+                }
             }
             .container {
                     .encabezado {
@@ -77,6 +84,13 @@ body {
                         font-weight: 700;
                         color: #0000ff;
                     }
+                    .tituloFormulario {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1.2em;
+                        letter-spacing: 0.2em;
+                        margin-bottom: 5px;
+                    }
+
                     .btn {
                         background-color: #000000;
                         color: white;
@@ -107,10 +121,35 @@ body {
         
         
     }
+    
+    .swal-title {
+        font-family: 'Roboto', sans-serif ;
+        color: #0000ff;
+        font-weight: 700;
+        
+    }
+    .swal-text {
+        width: 100%;
+        font-family: 'Roboto', sans-serif ;
+        text-align: center;
+      }
+      .swal-button-container {
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .swal-button {
+        background-color: #0000ff;
+        color: #ffffff;
+        font-weight: 700;        
+    }
+
     .footer {
         background-color: #0000ff;
         color: white;
     }
+
     .wasap {
         position: fixed;
         bottom: 15px;

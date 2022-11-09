@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@
     padding: 10px 0px 20px 27px;
   }
   body .navbar .navbar-nav .nav-item {
-    padding: 10px 0px 0px;
+    padding: 15px 0px 0px;
   }
   body .navbar .navbar-nav img {
     width: 20px;
@@ -43,7 +44,7 @@
   body .info .presentacionPancito .logo {
     display: flex;
     justify-content: flex-start;
-    margin: 130px 30px 20px 20px;
+    margin: 110px 30px 20px 20px;
   }
   body .info .presentacionPancito h1 {
     width: 100%;
@@ -74,11 +75,14 @@
   }
   body .info .informacionPancito .avisoConstruccion {
     margin: auto;
-    height: 400px;
-    padding: 60px 30px 0px;
+    height: 600px;
+    padding: 60px 30px 60px;
     text-align: left;
     font-size: 2em;
     line-height: 2;
+  }
+  body .info .informacionPancito .avisoConstruccion .salto-linea {
+    display: block;
   }
   body .info .informacionPancito .gradient2 {
     width: 100%;
@@ -89,7 +93,7 @@
     padding: 0px;
     display: flex;
     justify-content: flex-start;
-    margin: 80px 0px 20px 30px;
+    margin: 80px 0px 30px 30px;
   }
   body .info .informacionPancito .container .encabezado {
     text-align: left;
@@ -256,7 +260,7 @@
 }
 @media screen and (min-width: 1024px) { /*laptop*/
   body .navbar {
-    padding: 20px 40px 0px;
+    padding: 20px 40px 15px;
     position: fixed;
     z-index: 100;
     display: flex;
@@ -268,10 +272,10 @@
   }
   body .navbar-collapse {
     width: 500px;
-    margin: 0px 0px 0px 800px;
+    margin: 0px 50px 0px 750px;
   }
   body .navbar-nav {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   body .navbar-nav .nav-item {
     padding: 0px 20px;
@@ -281,7 +285,7 @@
     padding: 0px 0px;
   }
   body .navbar-nav .nav-item .link-padding {
-    padding: 23px 0px 0px;
+    padding: 20px 0px 0px;
   }
   body .navbar-nav img {
     width: 20px;
@@ -318,10 +322,10 @@
   body .info .presentacionPancito .presentacion {
     grid-area: presentacion;
     width: 450px;
-    margin: 760px 0px 50px 15px;
+    margin: 770px 0px 50px 15px;
     padding: 0px 30px 0px 0px;
     font-size: 2.3em;
-    line-height: 2;
+    line-height: 1.8;
   }
   body .info .presentacionPancito .escribinos {
     grid-area: a;
@@ -339,7 +343,7 @@
   }
   body .info .informacionPancito .avisoConstruccion {
     margin: 0px;
-    height: 300px;
+    height: 450px;
     padding: 80px 150px;
     text-align: center;
     font-size: 2em;
@@ -357,11 +361,12 @@
     padding: 0px;
     display: flex;
     justify-content: flex-start;
-    margin: 80px 0px 20px 300px;
+    margin: 80px 0px 10px 300px;
   }
   body .info .informacionPancito .container .encabezado {
     text-align: left;
     font-size: 2.5em;
+    margin-bottom: -10px;
   }
   body .info .informacionPancito .container .form-group {
     width: 350px;
@@ -379,7 +384,7 @@
     display: flex;
     justify-content: space-between;
     height: 130px;
-    margin-top: 150px;
+    margin-top: 130px;
     padding: 30px 30px 0px;
   }
   .footer .footerInfo {
@@ -434,7 +439,12 @@ body .info .presentacionPancito h1 .colorTitulo {
 body .info .presentacionPancito .presentacion {
   text-align: left;
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
+}
+body .info .presentacionPancito .presentacion::after {
+  content: "Es por eso que construimos sitios de fácil navegación, sintéticos y visualmente armónicos.";
+  background-color: #0000ff;
+  color: #ffffff;
 }
 body .info .presentacionPancito a {
   background-color: black;
@@ -452,14 +462,22 @@ body .info .informacionPancito .avisoConstruccion {
   background-color: #0000ff;
   color: white;
   width: 100%;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+}
+body .info .informacionPancito .avisoConstruccion .avisoTamaño {
+  font-size: 1.4em;
 }
 body .info .informacionPancito .container .encabezado {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #0000ff;
+}
+body .info .informacionPancito .container .tituloFormulario {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  margin-bottom: 5px;
 }
 body .info .informacionPancito .container .btn {
   background-color: #000000;
@@ -483,6 +501,25 @@ body .info .informacionPancito .container .form-group .form-control {
 }
 body .info .informacionPancito .container .form-group .form-control:hover {
   border: 2px solid #0000ff;
+}
+body .swal-title {
+  font-family: "Roboto", sans-serif;
+  color: #0000ff;
+  font-weight: 700;
+}
+body .swal-text {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+body .swal-button-container {
+  display: flex;
+  justify-content: center;
+}
+body .swal-button {
+  background-color: #0000ff;
+  color: #ffffff;
+  font-weight: 700;
 }
 body .footer {
   background-color: #0000ff;
