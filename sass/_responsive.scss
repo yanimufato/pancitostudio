@@ -97,6 +97,7 @@
                         width: 250px;
                     }
                     .btn {
+                        margin: 15px 0px 30px;
                         padding: 15px;
                     }
                 }
@@ -244,6 +245,7 @@
                         width: 350px;
                     }
                     .btn {
+                        margin: 15px 0px 30px;
                         padding: 15px;
                     }
                 }
@@ -283,8 +285,8 @@
             justify-content: flex-end;
         }
         .navbar-brand {
-            width: 200px;
-            margin-left: 60px;            
+            width: 100%;
+            padding: 0px ;        
         }
         .navbar-collapse {
             width: 500px;
@@ -395,6 +397,7 @@
                         width: 350px;
                     }
                     .btn {
+                        margin: 15px 0px 30px;
                         padding: 15px;
                     }
                 }

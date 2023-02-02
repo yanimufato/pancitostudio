@@ -68,8 +68,16 @@ body {
             }
         }
         .informacionPancito {
+            margin-top: 200px;
+            
+            background-color: #0000ff;
+            
+            transform: skewY(-10deg);            
+            overflow: hidden;
             .avisoConstruccion {
-                background-color: #0000ff;
+                transform-origin: 0 0;
+                transform: skewY(10deg);
+                
                 color: white;
                 width: 100%;
                 font-family: 'Roboto', sans-serif;
@@ -78,6 +86,8 @@ body {
                 }
             }
             .container {
+                
+                transform: skewY(10deg);
                     .encabezado {
                         font-family: 'Roboto', sans-serif;
                         text-transform: uppercase;                        
@@ -106,7 +116,7 @@ body {
                         color: #ffffff;
                     }
                     .form-group { 
-                        padding: 15px 0px;
+                        padding: 15px 0px 0px;
                         .form-control {
                             border: 2px solid #000000;
                             letter-spacing: 0.2em;
@@ -114,12 +124,21 @@ body {
                         .form-control:hover {
                             border: 2px solid #0000ff; 
                         }
+                        .msj {
+                            height: 115px;
+                        }
                     }
     
             }
         }
+
         
         
+    }
+    .relleno {
+        background-color: #0000ff;
+        height: 450px;
+        margin-top: -170px;
     }
     
     .swal-title {

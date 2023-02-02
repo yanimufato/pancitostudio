@@ -103,6 +103,7 @@
     width: 250px;
   }
   body .info .informacionPancito .container .btn {
+    margin: 15px 0px 30px;
     padding: 15px;
   }
   .gradient1 {
@@ -237,6 +238,7 @@
     width: 350px;
   }
   body .info .informacionPancito .container .btn {
+    margin: 15px 0px 30px;
     padding: 15px;
   }
   .gradient1 {
@@ -267,8 +269,8 @@
     justify-content: flex-end;
   }
   body .navbar-brand {
-    width: 200px;
-    margin-left: 60px;
+    width: 100%;
+    padding: 0px;
   }
   body .navbar-collapse {
     width: 500px;
@@ -372,6 +374,7 @@
     width: 350px;
   }
   body .info .informacionPancito .container .btn {
+    margin: 15px 0px 30px;
     padding: 15px;
   }
   .gradient1 {
@@ -458,14 +461,24 @@ body .info .presentacionPancito a:hover {
   background-color: #0000ff;
   color: white;
 }
-body .info .informacionPancito .avisoConstruccion {
+body .info .informacionPancito {
+  margin-top: 200px;
   background-color: #0000ff;
+  transform: skewY(-10deg);
+  overflow: hidden;
+}
+body .info .informacionPancito .avisoConstruccion {
+  transform-origin: 0 0;
+  transform: skewY(10deg);
   color: white;
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
 body .info .informacionPancito .avisoConstruccion .avisoTamaño {
   font-size: 1.4em;
+}
+body .info .informacionPancito .container {
+  transform: skewY(10deg);
 }
 body .info .informacionPancito .container .encabezado {
   font-family: "Roboto", sans-serif;
@@ -493,7 +506,7 @@ body .info .informacionPancito .container .btn:hover {
   color: #ffffff;
 }
 body .info .informacionPancito .container .form-group {
-  padding: 15px 0px;
+  padding: 15px 0px 0px;
 }
 body .info .informacionPancito .container .form-group .form-control {
   border: 2px solid #000000;
@@ -501,6 +514,14 @@ body .info .informacionPancito .container .form-group .form-control {
 }
 body .info .informacionPancito .container .form-group .form-control:hover {
   border: 2px solid #0000ff;
+}
+body .info .informacionPancito .container .form-group .msj {
+  height: 115px;
+}
+body .relleno {
+  background-color: #0000ff;
+  height: 450px;
+  margin-top: -170px;
 }
 body .swal-title {
   font-family: "Roboto", sans-serif;
