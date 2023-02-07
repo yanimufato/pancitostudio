@@ -1,77 +1,71 @@
 
-@media screen and (max-width: 767px){ /*movil*/
+@media screen and (max-width: 424px){ /*movil*/
     body {
         .navbar {
-            padding-top: 20px;
-             font-size: 0.5rem;
-             position: fixed;
-             z-index: 100;
-             display: flex;
-             justify-content: space-between;
-             .navbar-brand {
+            padding: 20px 0px 25px;
+            font-size: 0.5rem;
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            .navbar-brand {
                  width: 140px;
                  margin-left: 27px;            
-             }
+            }
              .navbar-toggler {
                  background-color: #0000FF;
                  margin: -10px 15px 0px 0px;
-             }
-             .navbar-nav {
+            }
+            .navbar-nav {
                  font-size: 1rem;
                  padding: 10px 0px 20px 27px;
                  .nav-item {
                     padding: 15px 0px 0px;
-                 }
-                 img {
+                }
+                img {
                     
                     width: 20px;
                 }
-             }
+            }
              .navbar-link {
                  padding: 0px;
-             }
-         }
+            }
+        }
         .info {
+            overflow: hidden;
             .presentacionPancito {
-                padding-bottom: 20px;   
+                margin-top: 50px;
+                padding-bottom: 60px;   
                 .logo {
                     display: flex;
-                    justify-content:flex-start;                    
-                    margin: 110px 30px 20px 20px;
+                    justify-content:left;                    
+                    margin: 110px 40px 20px 30px;
                 }
-                h1 {
+                h1 {                    
                     width: 100%;
-                    margin: 0px 0px 40px 30px;
-                    padding: 5px 0px;
+                    margin: 0px 0px 20px 40px;
+                    padding: 10px 0px;
                     font-size: 5.5em;
                     text-align: left;
                     }
                 .presentacion {
-                    width: 250px;
-                    margin: 0px 0px 50px 30px;
+                    width: 300px;
+                    margin: 0px 0px 50px 40px;
                     padding: 0px;
-                    font-size: 1.5em;
+                    font-size: 1.9em;
                     line-height: 2;
                 } 
                 .escribinos {
+                    margin: 0px 0px 0px 40px;
                     padding: 15px;
-                }
-                a {
-                    width: 100%;
-                    margin: 0px 0px 0px 30px;
                 }
             }
             .informacionPancito {
-                .gradient1 {
-                    margin: 50px 0px 0px 0px;
-                    width: 100%;
-                    height: 60px;
-                    background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-                }  
+                margin-top: 100px;
                 .avisoConstruccion {
-                    margin: auto;
+                    width: 300px;
                     height: 600px;
-                    padding: 60px 30px 60px;
+                    padding: 60px 40px 60px;
                     text-align: left;
                     font-size: 2em;
                     line-height: 2;
@@ -79,40 +73,36 @@
                         display: block;
                     }
                 }
-                .gradient2{
-                    width: 100%;
-                    height: 60px;
-                    background: linear-gradient(to bottom left, #0000FF 50%, #ffff 50%);
-                }
                 .container {
+                    width: 300px;
                     padding: 0px;
                     display: flex;
                     justify-content: flex-start;
-                    margin: 80px 0px 30px 30px;
+                    margin: 50px 0px 10px 40px;
                     .encabezado {
                         text-align: left;
                         font-size: 2em;
                     }
                     .form-group {
-                        width: 250px;
+                        width: 300px;
+                        border: 1px solid #0000FF;
                     }
                     .btn {
-                        margin: 15px 0px 30px;
+                        margin: 25px 0px 30px;
                         padding: 15px;
                     }
                 }
             }
         }    
     } 
-    .gradient1 {
-        margin: 20px 0px 0px 0px;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-    } 
+    .relleno {
+        background-color: #0000ff;
+        height: 250px;
+        margin-top: -170px;
+    }
     .footer {
         height: 180px;
-        padding: 30px 0px 0px 30px;
+        padding: 30px 0px 0px 40px;
         .saltoLinea {
             display: block;
             padding-top: 15px 0px;
@@ -130,141 +120,118 @@
     }
 }   
 
-@media screen and (min-width: 768px) and (max-width: 1023px ) { /*tablet*/
+@media screen and (min-width: 425px) and (max-width: 767px ) { /*tablet*/
     body {
         .navbar {
-            padding: 20px 40px 0px;
+            padding: 20px 0px 25px;
+            font-size: 0.5rem;
             position: fixed;
             z-index: 100;
             display: flex;
             justify-content: space-between;
-        }
-        .navbar-brand {
-            width: 200px;
-            margin-left: 27px;            
-        }
-        .navbar-collapse {
-            margin-left: 135px;
-        }
-        .navbar-nav {
-            font-size: 1rem;           
-            .nav-item {
-                padding: 0px 15px;
-                .nav-link {
-                    width: 100%;
-                    padding: 0px 0px;
+            .navbar-brand {
+                 width: 140px;
+                 margin-left: 27px;            
+            }
+             .navbar-toggler {
+                 background-color: #0000FF;
+                 margin: -10px 15px 0px 0px;
+            }
+            .navbar-nav {
+                 font-size: 1rem;
+                 padding: 10px 0px 20px 27px;
+                 .nav-item {
+                    padding: 15px 0px 0px;
                 }
-                .link-padding {
-                    padding: 20px 0px 0px;
+                img {
+                    
+                    width: 20px;
                 }
             }
-            img {
-                width: 20px; 
-                padding: 20px 0px;
+             .navbar-link {
+                 padding: 0px;
             }
-        }
-        .navbar-link {
-            padding: 0px 0px;
         }
         .info {
+            overflow: hidden;
             .presentacionPancito {
-                display: grid;   
-                gap: 5px;
-                grid-template-areas: 
-                    "logo presentacion"
-                    "logo presentacion"
-                    "h1 a";
-                    
-                .logo {  
-                    grid-area: logo;
-                    width: 350px;                  
-                    margin: 150px 20px 0px 20px;
-                    img {
-                        width: 350px;
-                    }
+                margin-top: 50px;
+                padding-bottom: 60px;   
+                .logo {
+                    width: 300px;
+                    display: flex;
+                    justify-content:left;                    
+                    margin: 110px 40px 20px 30px;
                 }
-                h1 {
-                    grid-area: h1;
-                    margin: 30px 0px 20px 30px;                  
-                    font-size: 7em;
-                    line-height: 1;
+                h1 {                    
+                    width: 300px;
+                    margin: 0px 0px 20px 40px;
+                    padding: 10px 0px;
+                    font-size: 5.5em;
                     text-align: left;
-                    .saltoLinea {
-                        display: block;
-                        padding: 15px 0px;
                     }
-                }
                 .presentacion {
-                    grid-area: presentacion;
-                    width: 350px;
-                    margin: 400px 0px 50px 15px;
-                    padding: 0px 30px 0px 0px;
-                    font-size: 2.5em;
+                    width: 300px;
+                    margin: 0px 0px 50px 40px;
+                    padding: 0px;
+                    font-size: 1.9em;
                     line-height: 2;
                 } 
                 .escribinos {
-                    grid-area: a;
-                    width: 150px;
-                    height: 50px;
-                    padding: 15px 30px;
-                    margin: 30px 0px 0px 15px;
+                    margin: 0px 0px 0px 40px;
+                    padding: 15px;
                 }
-                
             }
             .informacionPancito {
-                .gradient1 {
-                    margin: 50px 0px 0px 0px;
-                    padding: 0px;
-                    width: 100%;
-                    height: 50px;
-                    background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-                }  
+                margin-top: 100px;
                 .avisoConstruccion {
-                    margin: 0px;
-                    height: 300px;
-                    padding: 60px 150px;
-                    text-align: center;
+                    width: 300px;
+                    height: 600px;
+                    padding: 60px 40px 60px;
+                    text-align: left;
                     font-size: 2em;
                     line-height: 2;
-                }
-                .gradient2{
-                    width: 100%;
-                    height: 50px;
-                    background: linear-gradient(to bottom left, #0000FF 50%, #ffff 50%);
+                    .salto-linea {
+                        display: block;
+                    }
                 }
                 .container {
+                    width: 300px;
                     padding: 0px;
                     display: flex;
                     justify-content: flex-start;
-                    margin: 80px 0px 20px 150px;
+                    margin: 50px 0px 10px 40px;
                     .encabezado {
                         text-align: left;
-                        font-size: 2.5em;
+                        font-size: 2em;
                     }
                     .form-group {
-                        width: 350px;
+                        width: 300px;
+                        border: 1px solid #0000FF;
                     }
                     .btn {
-                        margin: 15px 0px 30px;
+                        margin: 25px 0px 30px;
                         padding: 15px;
                     }
                 }
-
             }
-
         }    
     } 
-    .gradient1 {
-        margin: 20px 0px 0px 0px;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-    } 
+    .relleno {
+        background-color: #0000ff;
+        height: 250px;
+        margin-top: -170px;
+    }
     .footer {
-        display: flex;
-        justify-content: space-between;
-        height: 100px;
-        padding: 10px 0px 0px;
+        height: 180px;
+        padding: 30px 0px 0px 40px;
+        .saltoLinea {
+            display: block;
+            padding-top: 15px 0px;
+        }
+        .tituloFooter {
+            font-size: 1.5em;
+        }
         p {
             margin-bottom: 5px;
         }
@@ -273,104 +240,79 @@
         }
         
     }
-}    
+}   
 
-@media screen and (min-width: 1024px) { /*laptop*/
+@media screen and (min-width: 768px) and (max-width: 1024px ) { /*laptop*/
     body {
         .navbar {
-            padding: 20px 40px 15px;
+            padding: 20px 0px 0px;
+            font-size: 0.5rem;
             position: fixed;
-            z-index: 100;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .navbar-brand {
-            width: 100%;
-            padding: 0px ;        
-        }
-        .navbar-collapse {
-            width: 500px;
-            margin: 0px 50px 0px 750px;
-        }
-        .navbar-nav {
-            font-size: 1.3rem;
-                                  
-            .nav-item {
-                padding: 0px 20px;
-                .nav-link {
-                    width: 100%;
-                    padding: 0px 0px;
+            z-index: 100;           
+            .navbar-brand {
+                 width: 140px;
+                 margin-left: 50px;            
+            }
+             .navbar-toggler {
+                 background-color: #0000FF;
+                 margin: -10px 15px 0px 0px;
+            }
+            .navbar-nav {
+                align-items: center;
+                 font-size: 1rem;
+                 padding: 10px 0px 20px 300px;
+                 .nav-item {                    
+                    padding: 15px 0px 0px;
                 }
-                .link-padding {
-                    padding: 20px 0px 0px;
+                img {
+                    margin-bottom: 0px;
+                    width: 20px;
                 }
             }
-            img {
-                width: 20px; 
-                padding: 20px 0px;
+             .navbar-link {
+                 padding: 0px;
             }
-        }
-        .navbar-link {
-            padding: 0px;
         }
         .info {
+            overflow: hidden;
             .presentacionPancito {
-                display: grid;   
-                gap: 5px;
-                grid-template-areas: 
-                    "logo presentacion"
-                    "h1 presentacion"
-                    "h1 a";
-                    
-                .logo {  
-                    grid-area: logo;
-                    width: 350px;                  
-                    margin: 250px 20px 80px 300px;
-                    img {
-                        width: 350px;
-                    }
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                padding-bottom: 0px;   
+                .logo {
+                    width: 300px;                    
+                    margin: 110px 20px 20px 90px;
                 }
-                h1 {
-                    grid-area: h1;
-                    margin: 30px 0px 20px 300px;                  
-                    font-size: 7em;
-                    line-height: 1;
+                h1 {                    
+                    width: 300px;
+                    margin: 250px 0px 20px 40px;
+                    padding: 10px 0px;
+                    font-size: 5.5em;
                     text-align: left;
-                    .saltoLinea {
-                        display: block;
-                        width: 350px;
-                        padding: 15px 0px;
                     }
-                }
                 .presentacion {
-                    grid-area: presentacion;
-                    width: 450px;
-                    margin: 770px 0px 50px 15px;
-                    padding: 0px 30px 0px 0px;
-                    font-size: 2.3em;
-                    line-height: 1.8;
+                    width: 300px;
+                    margin: 0px 0px 50px 80px;
+                    padding: 0px;
+                    font-size: 1.9em;
+                    line-height: 2;
                 } 
                 .escribinos {
-                    grid-area: a;
-                    width: 150px;
                     height: 50px;
-                    padding: 17px 30px;
-                    margin: 10px 0px 0px 15px;
+                    margin: 10px 160px 0px 0px;
+                    padding: 15px;
                 }
-                
             }
             .informacionPancito {
-                .gradient1 {
-                    margin: 50px 0px 0px 0px;
-                    padding: 0px;
-                    width: 100%;
-                    height: 50px;
-                    background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-                }  
-                .avisoConstruccion {
-                    margin: 0px;
-                    height: 450px;
-                    padding: 80px 150px;
+                margin-top: 100px;
+                display: block;
+                .avisoConstruccion {                    
+                    width: 550px;
+                    height: 400px;
+                    margin:  auto;
+                    padding: 60px 40px 60px;
                     text-align: center;
                     font-size: 2em;
                     line-height: 2;
@@ -378,61 +320,182 @@
                         display: block;
                     }
                 }
-                .gradient2{
-                    width: 100%;
-                    height: 50px;
-                    background: linear-gradient(to bottom left, #0000FF 50%, #ffff 50%);
-                }
                 .container {
+                    width: 300px;
                     padding: 0px;
                     display: flex;
                     justify-content: flex-start;
-                    margin: 80px 0px 10px 300px;
+                    margin: auto;
                     .encabezado {
-                        text-align: left;
-                        font-size: 2.5em;
-                        margin-bottom: -10px;
+                        text-align: center;
+                        font-size: 2em;
                     }
                     .form-group {
-                        width: 350px;
+                        width: 300px;
+                        border: 1px solid #0000FF;
                     }
                     .btn {
-                        margin: 15px 0px 30px;
+                        margin: 25px 0px 30px;
                         padding: 15px;
                     }
                 }
-
             }
-
         }    
     } 
-    .gradient1 {
-        margin: 20px 0px 0px 0px;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(to top right, #0000FF 50%, #ffff 50%);
-    } 
-    .footer {  
+    .relleno {
+        background-color: #0000ff;
+        height: 250px;
+        margin-top: -170px;
+    }
+    .footer {
         display: flex;
-        justify-content: space-between;
-        height: 130px;
-        margin-top: 130px;    
-        padding: 30px 30px 0px;
-        .footerInfo {
-            margin-left: 65px;
-        }
-        .footerDireccion {
-            text-align: right;
-            margin-right: 90px;
-        }
-        p {
-            font-size: 1.3em;
-            margin-bottom: 5px;
+        justify-content: space-around;
+        height: 120px;
+        padding: 30px 0px 0px 40px;
+        .saltoLinea {
+            display: block;
+            padding-top: 15px 0px;
         }
         .tituloFooter {
             font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        .tituloFooter {
             font-weight: 500;
         }
         
     }
-}           
+}   
+@media screen and (min-width: 1025px){
+    body {
+        .navbar {
+            padding: 20px 0px 0px;
+            font-size: 0.5rem;
+            position: fixed;
+            z-index: 100;           
+            .navbar-brand {
+                 width: 140px;
+                 margin-left: 100px;            
+            }
+             .navbar-toggler {
+                 background-color: #0000FF;
+                 margin: -10px 15px 0px 0px;
+            }
+            .navbar-collapse {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 100px;
+            }
+            .navbar-nav {
+                align-items: center;
+                font-size: 1rem;
+                padding: 10px 0px 20px 300px;
+                 .nav-item {                    
+                    padding: 15px 0px 0px;
+                }
+                img {
+                    margin-bottom: 0px;
+                    width: 20px;
+                }
+            }
+             .navbar-link {
+                 padding: 0px;
+            }
+        }
+        .info {
+            overflow: hidden;
+            .presentacionPancito {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                padding-bottom: 0px;   
+                .logo {
+                    width: 350px;                    
+                    margin: 130px 20px 0px 200px;
+                }
+                h1 {                    
+                    width: 300px;
+                    margin: 300px 300px 0px 0px;
+                    padding: 10px 0px;
+                    font-size: 6.5em;
+                    text-align: left;
+                    }
+                .presentacion {
+                    width: 300px;
+                    margin: 0px 0px 50px 180px;
+                    padding: 0px;
+                    font-size: 1.9em;
+                    line-height: 2;
+                } 
+                .escribinos {
+                    height: 50px;
+                    margin: 10px 430px 0px 0px;
+                    padding: 15px;
+                }
+            }
+            .informacionPancito {
+                margin-top: 100px;
+                display: block;
+                .avisoConstruccion {                    
+                    width: 550px;
+                    height: 400px;
+                    margin:  auto;
+                    padding: 60px 40px 60px;
+                    text-align: center;
+                    font-size: 2em;
+                    line-height: 2;
+                    .salto-linea {
+                        display: block;
+                    }
+                }
+                .container {
+                    width: 300px;
+                    padding: 0px;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: auto;
+                    .encabezado {
+                        text-align: center;
+                        font-size: 2em;
+                    }
+                    .form-group {
+                        width: 300px;
+                        border: 1px solid #0000FF;
+                    }
+                    .btn {
+                        margin: 25px 0px 30px;
+                        padding: 15px;
+                    }
+                }
+            }
+        }    
+    } 
+    .relleno {
+        background-color: #0000ff;
+        height: 250px;
+        margin-top: -170px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        height: 120px;
+        padding: 30px 0px 0px 40px;
+        .saltoLinea {
+            display: block;
+            padding-top: 15px 0px;
+        }
+        .tituloFooter {
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        .tituloFooter {
+            font-weight: 500;
+        }
+        
+    }
+}
