@@ -1,395 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 769px) {
-    .hamburger {
-        display: none;
-    }
-    .mainHeader {
-        .navbar-desktop {
-            max-width: 1100px;
-        }
-    }
-    .info {
-        max-width: 1100px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 10px 10px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "logo titulo"
-              "presentacion escribinos"
-              "avisoConstruccion avisoConstruccion"
-              "formulario formulario";
-        .logo { 
-                grid-area: logo; 
-                display: flex;
-                align-items: flex-end;            
-                margin: 150px 0px 15px 250px;
-                img {
-                    width: 400px;
-                }
-            }      
-            .titulo { 
-                grid-area: titulo;
-                display: flex;
-                align-items: flex-end;
-                                         
-                width: 100%;  
-                margin: 0px 0px 0px 250px;              
-                    h1 {  
-                        margin: 0px;         
-                        font-size: 6.5em;
-                        letter-spacing: 0.1em;
-                        .saltoLinea {
-                            padding: 10px 0px;
-                            display: block;
-                        }
-                    }
-            }          
-            .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: 40px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
-                    line-height: 1.8em;
-                    margin: 0px 0px 0px 55px;
-                }
-
-            }          
-            .escribinos {                 
-                grid-area: escribinos; 
-                height: 300px;
-                margin-top: 0px;
-                button {
-                    margin-top: 40px;
-                }
-            } 
-            .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -200px;
-                width: 768px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 400px;               
-                    text-align: center;
-                    font-size: 1.8em;
-                    font-weight: 400;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-
-                }
-            }          
-            .formulario { 
-                grid-area: formulario; 
-                margin-top: 0px;
-                margin-bottom: 50px;
-                .formDetalle {
-                    margin-left: 50px;
-                    width: 300px;
-                    .encabezado {
-                        font-size: 2.5em;
-                    }
-                    .form-group { 
-                        .msj {
-                            height: 115px;
-                        }
-                    }    
-                    button {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }  
-        }    
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 0px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        .footerDireccion {
-            text-align: right;
-        }
-        
-    }
-    
+  .hamburger {
+    display: none;
+  }
+  .mainHeader .navbar-desktop {
+    max-width: 1100px;
+  }
+  .info {
+    max-width: 1100px;
+  }
+  .info .presentacionPancito {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo titulo" "presentacion escribinos" "avisoConstruccion avisoConstruccion" "formulario formulario";
+  }
+  .info .presentacionPancito .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: flex-end;
+    margin: 150px 0px 15px 250px;
+  }
+  .info .presentacionPancito .logo img {
+    width: 400px;
+  }
+  .info .presentacionPancito .titulo {
+    grid-area: titulo;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0px 0px 0px 250px;
+  }
+  .info .presentacionPancito .titulo h1 {
+    margin: 0px;
+    font-size: 6.5em;
+    letter-spacing: 0.1em;
+  }
+  .info .presentacionPancito .titulo h1 .saltoLinea {
+    padding: 10px 0px;
+    display: block;
+  }
+  .info .presentacionPancito .presentacion {
+    grid-area: presentacion;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .info .presentacionPancito .presentacion p {
+    width: 290px;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    margin: 0px 0px 0px 55px;
+  }
+  .info .presentacionPancito .escribinos {
+    grid-area: escribinos;
+    height: 300px;
+    margin-top: 0px;
+  }
+  .info .presentacionPancito .escribinos button {
+    margin-top: 40px;
+  }
+  .info .presentacionPancito .avisoConstruccion {
+    grid-area: avisoConstruccion;
+    margin-top: -200px;
+    width: 768px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info .presentacionPancito .avisoConstruccion p {
+    width: 400px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .info .presentacionPancito .avisoConstruccion p .salto-linea {
+    display: block;
+  }
+  .info .presentacionPancito .formulario {
+    grid-area: formulario;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .info .presentacionPancito .formulario .formDetalle {
+    margin-left: 50px;
+    width: 300px;
+  }
+  .info .presentacionPancito .formulario .formDetalle .encabezado {
+    font-size: 2.5em;
+  }
+  .info .presentacionPancito .formulario .formDetalle .form-group .msj {
+    height: 115px;
+  }
+  .info .presentacionPancito .formulario .formDetalle button {
+    margin: 25px 0px 30px;
+    padding: 15px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding: 30px 0px 0px 0px;
+  }
+  .footer .saltoLinea {
+    display: block;
+    padding-top: 15px 0px;
+  }
+  .footer .tituloFooter {
+    font-size: 1.5em;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  }
+  .footer .tituloFooter {
+    font-weight: 500;
+  }
+  .footer .footerDireccion {
+    text-align: right;
+  }
 }
-
-@media screen and  (max-width: 768px ) {
-    .navbar-desktop {
-        display: none;
-    }
-    .info {
-        max-width: 768px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 10px 10px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "logo titulo"
-              "presentacion escribinos"
-              "avisoConstruccion avisoConstruccion"
-              "formulario formulario";
-        .logo { 
-                grid-area: logo; 
-                display: flex;
-                align-items: flex-end;            
-                margin: 150px 0px 15px 50px;
-                img {
-                    width: 300px;
-                }
-            }      
-            .titulo { 
-                grid-area: titulo;
-                display: flex;
-                align-items: flex-end;                
-                    h1 { 
-                        width: 100%;  
-                        margin: 0px;         
-                        font-size: 6.5em;
-                        letter-spacing: 0.1em;
-                        .saltoLinea {
-                            padding: 10px 0px;
-                            display: block;
-                        }
-                    }
-            }          
-            .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: 40px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
-                    line-height: 1.8em;
-                    margin: 0px 0px 0px 55px;
-                }
-
-            }          
-            .escribinos {                 
-                grid-area: escribinos; 
-                height: 300px;
-                margin-top: 0px;
-                button {
-                    margin-top: 40px;
-                }
-            } 
-            .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -200px;
-                width: 768px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 400px;               
-                    text-align: center;
-                    font-size: 1.8em;
-                    font-weight: 400;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-
-                }
-            }          
-            .formulario { 
-                grid-area: formulario; 
-                margin-top: 0px;
-                margin-bottom: 50px;
-                .formDetalle {
-                    margin-left: 50px;
-                    width: 300px;
-                    .encabezado {
-                        font-size: 2.5em;
-                    }
-                    .form-group { 
-                        .msj {
-                            height: 115px;
-                        }
-                    }    
-                    button {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }  
-        }    
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 0px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        .footerDireccion {
-            text-align: right;
-        }
-        
-    }
+@media screen and (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .info {
+    max-width: 768px;
+  }
+  .info .presentacionPancito {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo titulo" "presentacion escribinos" "avisoConstruccion avisoConstruccion" "formulario formulario";
+  }
+  .info .presentacionPancito .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: flex-end;
+    margin: 150px 0px 15px 50px;
+  }
+  .info .presentacionPancito .logo img {
+    width: 300px;
+  }
+  .info .presentacionPancito .titulo {
+    grid-area: titulo;
+    display: flex;
+    align-items: flex-end;
+  }
+  .info .presentacionPancito .titulo h1 {
+    width: 100%;
+    margin: 0px;
+    font-size: 6.5em;
+    letter-spacing: 0.1em;
+  }
+  .info .presentacionPancito .titulo h1 .saltoLinea {
+    padding: 10px 0px;
+    display: block;
+  }
+  .info .presentacionPancito .presentacion {
+    grid-area: presentacion;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .info .presentacionPancito .presentacion p {
+    width: 290px;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    margin: 0px 0px 0px 55px;
+  }
+  .info .presentacionPancito .escribinos {
+    grid-area: escribinos;
+    height: 300px;
+    margin-top: 0px;
+  }
+  .info .presentacionPancito .escribinos button {
+    margin-top: 40px;
+  }
+  .info .presentacionPancito .avisoConstruccion {
+    grid-area: avisoConstruccion;
+    margin-top: -200px;
+    width: 768px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info .presentacionPancito .avisoConstruccion p {
+    width: 400px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .info .presentacionPancito .avisoConstruccion p .salto-linea {
+    display: block;
+  }
+  .info .presentacionPancito .formulario {
+    grid-area: formulario;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .info .presentacionPancito .formulario .formDetalle {
+    margin-left: 50px;
+    width: 300px;
+  }
+  .info .presentacionPancito .formulario .formDetalle .encabezado {
+    font-size: 2.5em;
+  }
+  .info .presentacionPancito .formulario .formDetalle .form-group .msj {
+    height: 115px;
+  }
+  .info .presentacionPancito .formulario .formDetalle button {
+    margin: 25px 0px 30px;
+    padding: 15px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding: 30px 0px 0px 0px;
+  }
+  .footer .saltoLinea {
+    display: block;
+    padding-top: 15px 0px;
+  }
+  .footer .tituloFooter {
+    font-size: 1.5em;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  }
+  .footer .tituloFooter {
+    font-weight: 500;
+  }
+  .footer .footerDireccion {
+    text-align: right;
+  }
 }
-    
-
-@media screen and (max-width:424px) {
-    .navbar-desktop {
-        display: none;
-    }
-    .info {
-        max-width: 424px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 0.5fr 1fr 0.5fr 0.75fr 0.75fr;
-            gap: 10px 10px;
-            grid-auto-flow:row;
-            grid-template-areas:
-            "logo"
-            "titulo"
-            "presentacion"
-            "escribinos"
-            "avisoConstruccion"
-            "formulario";
-        .logo { 
-                grid-area: logo;             
-                margin: 150px 0px 25px 30px;
-                img {
-                    width: 300px;
-                }
-            }      
-            .titulo { 
-                grid-area: titulo;
-                height: 300px;
-                    h1 {            
-                        font-size: 6em;
-                        letter-spacing: 0.1em;
-                        margin: 0px 0px 0px 35px;
-                        padding: 10px 0px;
-                        .saltoLinea {
-                            padding: 10px 0px;
-                            display: block;
-                        }
-                    }
-            }          
-            .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: -20px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
-                    line-height: 1.8em;
-                    margin: 0px 0px 0px 35px;
-                }
-
-            }          
-            .escribinos { 
-                height: 100px;
-                grid-area: escribinos; 
-                margin-top: -280px;
-                button {
-                    margin-left: 35px;
-                }
-            } 
-            .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -450px;
-                width: 425px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 300px;
-                    margin-top: -60px;                
-                    text-align: center;
-                    font-size: 1.8em;
-                    font-weight: 400;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-
-                }
-            }          
-            .formulario { 
-                grid-area: formulario; 
-                margin-top: -100px;
-                .formDetalle {
-                    margin-left: 35px;
-                    width: 300px;
-                    .encabezado {
-                        font-size: 2.5em;
-                    }
-                    .form-group { 
-                        .msj {
-                            height: 115px;
-                        }
-                    }    
-                    button {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }  
-        }    
-    }
-    .footer {
-        height: 180px;
-        padding: 30px 0px 0px 35px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        
-    }
+@media screen and (max-width: 424px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .info {
+    max-width: 424px;
+  }
+  .info .presentacionPancito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 0.75fr 0.75fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo" "titulo" "presentacion" "escribinos" "avisoConstruccion" "formulario";
+  }
+  .info .presentacionPancito .logo {
+    grid-area: logo;
+    margin: 150px 0px 25px 30px;
+  }
+  .info .presentacionPancito .logo img {
+    width: 300px;
+  }
+  .info .presentacionPancito .titulo {
+    grid-area: titulo;
+    height: 300px;
+  }
+  .info .presentacionPancito .titulo h1 {
+    font-size: 6em;
+    letter-spacing: 0.1em;
+    margin: 0px 0px 0px 35px;
+    padding: 10px 0px;
+  }
+  .info .presentacionPancito .titulo h1 .saltoLinea {
+    padding: 10px 0px;
+    display: block;
+  }
+  .info .presentacionPancito .presentacion {
+    grid-area: presentacion;
+    height: 300px;
+    margin-top: -20px;
+  }
+  .info .presentacionPancito .presentacion p {
+    width: 290px;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    margin: 0px 0px 0px 35px;
+  }
+  .info .presentacionPancito .escribinos {
+    height: 100px;
+    grid-area: escribinos;
+    margin-top: -280px;
+  }
+  .info .presentacionPancito .escribinos button {
+    margin-left: 35px;
+  }
+  .info .presentacionPancito .avisoConstruccion {
+    grid-area: avisoConstruccion;
+    margin-top: -450px;
+    width: 425px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info .presentacionPancito .avisoConstruccion p {
+    width: 300px;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .info .presentacionPancito .avisoConstruccion p .salto-linea {
+    display: block;
+  }
+  .info .presentacionPancito .formulario {
+    grid-area: formulario;
+    margin-top: -100px;
+  }
+  .info .presentacionPancito .formulario .formDetalle {
+    margin-left: 35px;
+    width: 300px;
+  }
+  .info .presentacionPancito .formulario .formDetalle .encabezado {
+    font-size: 2.5em;
+  }
+  .info .presentacionPancito .formulario .formDetalle .form-group .msj {
+    height: 115px;
+  }
+  .info .presentacionPancito .formulario .formDetalle button {
+    margin: 25px 0px 30px;
+    padding: 15px;
+  }
+  .footer {
+    height: 180px;
+    padding: 30px 0px 0px 35px;
+  }
+  .footer .saltoLinea {
+    display: block;
+    padding-top: 15px 0px;
+  }
+  .footer .tituloFooter {
+    font-size: 1.5em;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  }
+  .footer .tituloFooter {
+    font-weight: 500;
+  }
 }
-
-
-
 /*
 @media screen and (max-width: 424px){ /*movil
     body {
@@ -415,7 +385,7 @@
                     padding: 15px 0px 0px;
                 }
                 img {
-                    
+
                     width: 20px;
                 }
             }
@@ -507,7 +477,7 @@
         .tituloFooter {
             font-weight: 500;
         }
-        
+
     }
 }   
 
@@ -535,7 +505,7 @@
                     padding: 15px 0px 0px;
                 }
                 img {
-                    
+
                     width: 20px;
                 }
             }
@@ -576,7 +546,7 @@
             .informacionPancito {
                 margin-top: 100px;
                 .avisoConstruccion {
-                    
+
                     height: 600px;
                     padding: 60px 40px 60px;
                     text-align: left;
@@ -629,7 +599,7 @@
         .tituloFooter {
             font-weight: 500;
         }
-        
+
     }
 }   
 
@@ -756,7 +726,7 @@
         .tituloFooter {
             font-weight: 500;
         }
-        
+
     }
 }   
 @media screen and (min-width: 1025px){
@@ -887,6 +857,229 @@
         .tituloFooter {
             font-weight: 500;
         }
-        
+
     }
 }*/
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  /*Menu*/
+  /*Main*/
+}
+body a:link, body a:visited, body a:active {
+  text-decoration: none;
+}
+body .mobileMainMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #0000ff;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+body .mobileMainMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 100px 0px 20px 40px;
+  width: 100%;
+}
+body .mobileMainMenu ul li {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+body .mobileMainMenu ul li a {
+  color: #ffffff;
+}
+body .showMenu {
+  transform: translateY(0%);
+}
+body .mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #0000ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 50px;
+}
+body .mainHeader .logo {
+  width: 120px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+body .mainHeader .logo a {
+  color: #ffffff;
+}
+body .mainHeader ul {
+  display: flex;
+}
+body .mainHeader ul li {
+  position: relative;
+  margin-left: 20px;
+}
+body .mainHeader ul li a {
+  color: #ffffff;
+}
+body .hamburger {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+body .hamburger .hamburgerTop, body .hamburger .hamburgerMiddle, body .hamburger .hamburgerBottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.5s;
+}
+body .hamburger .hamburgerMiddle {
+  transform: translateY(5px);
+}
+body .hamburger .hamburgerBottom {
+  transform: translateY(10px);
+}
+body .open {
+  transform: rotate(90deg);
+}
+body .open .hamburgerTop {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+body .open .hamburgerMiddle {
+  display: none;
+}
+body .open .hamburgerBottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+body .presentacionPancito .logo {
+  width: 100%;
+}
+body .presentacionPancito .titulo h1 {
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+}
+body .presentacionPancito .titulo h1 .colorTitulo {
+  color: #0000ff;
+}
+body .presentacionPancito .escribinos button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+body .presentacionPancito .escribinos button:hover {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+body .presentacionPancito .escribinos button a {
+  color: #ffffff;
+}
+body .presentacionPancito .avisoConstruccion {
+  background-color: #0000ff;
+  transform: skewY(-10deg);
+}
+body .presentacionPancito .avisoConstruccion p {
+  transform-origin: 0 0;
+  transform: skewY(10deg);
+  color: #ffffff;
+}
+body .presentacionPancito .formulario .formDetalle .encabezado {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0000ff;
+}
+body .presentacionPancito .formulario .form-group {
+  padding-top: 15px;
+}
+body .presentacionPancito .formulario .form-group .form-control {
+  border: 2px solid #0000ff;
+  letter-spacing: 0.2em;
+}
+body .presentacionPancito .formulario .form-group .form-control:hover {
+  border: 2px solid #0000ff;
+}
+body .presentacionPancito .formulario .tituloFormulario {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+body .presentacionPancito .formulario button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+body .presentacionPancito .formulario button:hover {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+body .swal-title {
+  font-family: "Roboto", sans-serif;
+  color: #0000ff;
+  font-weight: 700;
+}
+body .swal-text {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+body .swal-button-container {
+  display: flex;
+  justify-content: center;
+}
+body .swal-button {
+  background-color: #0000ff;
+  color: #ffffff;
+  font-weight: 700;
+}
+body .footer {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+body .wasap {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}

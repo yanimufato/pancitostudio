@@ -7,18 +7,33 @@
     overflow-x: hidden
 }
 
-@import "responsive";
+//@import "responsive";
 
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-}
-
-body {
     a:link, a:visited, a:active {
         text-decoration: none;
     }
-    .navbar { /*navbar*/
+}
+
+body {
+    background-color: aqua;
+    .mainHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1; 
+        display: flex;
+        }
+}
+
+
+
+/*body {
+
+    .navbar { 
         width: 100%;
         background-color: #0000ff;
         .navbar-brand {
@@ -127,9 +142,7 @@ body {
 
         
         
-    }
-
-    
+    }    
     .swal-title {
         font-family: 'Roboto', sans-serif ;
         color: #0000ff;
@@ -163,4 +176,4 @@ body {
         bottom: 15px;
         right: 15px;
     }
-}
+}/*
