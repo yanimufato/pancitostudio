@@ -13,14 +13,13 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-
 }
-
 
 body {
     a:link, a:visited, a:active {
         text-decoration: none;
     }
+    font-family: 'Roboto', sans-serif;
     /*Menu*/
     .mobileMainMenu {
         position: fixed;
@@ -62,24 +61,40 @@ body {
         background-color: #0000ff;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;        
         height: 100px;
-        padding: 0 50px;
         .logo {
-            width: 120px;
-            font-size: 1.4em;
+            width: 140px;
             font-weight: 700;
-            a {
+            .imgLogo {
                 color: #ffffff;
             }
         }
         ul {
             display: flex;
             li {
+                letter-spacing: 0.1em;
                 position: relative;
-                margin-left: 20px;
+                margin-left: 40px;
                 a {
                     color: #ffffff;
+                }
+                a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    color: red;
+                    transform: scaleX(0); 
+                    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+                    transform-origin: right center;                       
+                }
+                a:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left center;
+                    transition-duration: 0.4s;
                 }
             }
         }
@@ -124,94 +139,101 @@ body {
     
     }
     /*Main*/
-    .presentacionPancito {
-        .logo {
-            width: 100%;
-        }
-        .titulo h1 {
-            font-family: 'Paytone One', sans-serif;
-            text-transform: uppercase;
-            .colorTitulo {
-                color: #0000ff;
-                }
-        }
-        .escribinos  {
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 140px;
-                height: 50px;
-                background-color: black;
-                color: white;
-                border: none;
+    .info {
+        .seccion1 {
+            .titulo h1 {
+                font-family: 'Paytone One', sans-serif;
                 text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;       
-                font-size: 1.3em;
-                font-weight: 700;
-                letter-spacing: 0.3em;
-                    &:hover {
-                        background-color: #0000ff;
-                        color: #ffffff;
-                    }
-                    a {
-                        color: #ffffff;
-                    }
+                .colorTitulo {
+                    color: #0000ff;
                 }
-        }
-        .avisoConstruccion {
-            background-color: #0000ff; 
-            transform: skewY(-10deg);
-            p {
-                transform-origin: 0 0;
-                transform: skewY(10deg);
-                color: #ffffff;
             }
-        }
-        .formulario {
-            .formDetalle .encabezado {
+        }    
+        .seccion2 { 
+            .presentacion {
                 font-family: 'Roboto', sans-serif;
-                text-transform: uppercase;                        
-                font-weight: 700;
-                color: #0000ff;
             }
-            .form-group {
-                padding-top: 15px;
-                .form-control {
-                    border: 2px solid #0000ff;
-                    letter-spacing: 0.2em;
+            .escribinos {
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 140px;
+                    height: 50px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;       
+                    font-size: 1.3em;
+                    font-weight: 700;
+                    letter-spacing: 0.3em;
+                        &:hover {
+                            background-color: #0000ff;
+                            color: #ffffff;
+                        }
+                        a {
+                            color: #ffffff;
+                        }
                 }
-                .form-control:hover {
-                    border: 2px solid #0000ff; 
+            }
+        } 
+        .seccion3 {   
+            .avisoConstruccion {
+                background-color: #0000ff; 
+                transform: skewY(-10deg);
+                p {
+                    transform-origin: 0 0;
+                    transform: skewY(10deg);
+                    color: #ffffff;
                 }
-            }
-            .tituloFormulario {
-                color: #000000;
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.3em;
-                letter-spacing: 0.1em;
-                margin-bottom: 5px;
-            }
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 120px;
-                height: 50px;
-                background-color: black;
-                color: white;
-                border: none;
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;       
-                font-size: 1.3em;
-                font-weight: 700;
-                letter-spacing: 0.3em;
-                    &:hover {
-                        background-color: #0000ff;
-                        color: #ffffff;
+            }   
+            .formulario {
+                .formDetalle .encabezado {
+                    font-family: 'Roboto', sans-serif;
+                    text-transform: uppercase;                        
+                    font-weight: 700;
+                    color: #0000ff;
+                }
+                .form-group {
+                    padding-top: 15px;
+                    .form-control {
+                        border: 2px solid #0000ff;
+                        letter-spacing: 0.2em;                        
+                        box-shadow: none;
                     }
+                    .form-control:hover {
+                        border: 2px solid #0000ff; 
+                    }
+                }
+                .tituloFormulario {
+                    color: #000000;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.3em;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 5px;
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    height: 50px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;       
+                    font-size: 1.3em;
+                    font-weight: 700;
+                    letter-spacing: 0.3em;
+                        &:hover {
+                            background-color: #0000ff;
+                            color: #ffffff;
+                        }
+                }
             }
-        }
+        }    
     
     }
     .swal-title {

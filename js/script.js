@@ -1,6 +1,8 @@
 const btn = document.getElementById("menuBtn");
 const menu = document.getElementById('mobileMenu')
 
+const mensaje =document.getElementById("btn")
+
 btn.addEventListener('click', navToggle);
 
 function navToggle () {
@@ -8,3 +10,9 @@ function navToggle () {
     menu.classList.toggle('showMenu');
 }
 
+mensaje.addEventListener("click", ()=> {
+    swal({
+      title: ":)",
+      text: "Gracias por escribir",
+    });
+  })

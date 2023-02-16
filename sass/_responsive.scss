@@ -1,4 +1,14 @@
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 1024px) {
+    .mainHeader  {
+        padding: 0 100px;
+        .logo {
+            font-size: 1.7em;
+        }
+        ul li {
+            font-size: 1.3em;
+        }
+    } 
     .hamburger {
         display: none;
     }
@@ -7,335 +17,195 @@
             max-width: 1100px;
         }
     }
-    .info {
-        max-width: 1100px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 10px 10px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "logo titulo"
-              "presentacion escribinos"
-              "avisoConstruccion avisoConstruccion"
-              "formulario formulario";
-        .logo { 
-                grid-area: logo; 
-                display: flex;
-                align-items: flex-end;            
-                margin: 150px 0px 15px 250px;
+    .info {                
+        .seccion1 {  
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            width: 1024px;
+            margin: 70px auto;            
+            padding-top: 150px;
+            .logo { 
+                width: 400px;               
                 img {
-                    width: 400px;
-                }
+                    width: 100%;                    
+                }                
             }      
-            .titulo { 
-                grid-area: titulo;
-                display: flex;
-                align-items: flex-end;
-                                         
-                width: 100%;  
-                margin: 0px 0px 0px 250px;              
-                    h1 {  
-                        margin: 0px;         
-                        font-size: 6.5em;
-                        letter-spacing: 0.1em;
+            .titulo {
+                    h1 {           
+                        font-size: 9em;                      
                         .saltoLinea {
                             padding: 10px 0px;
                             display: block;
                         }
                     }
-            }          
-            .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: 40px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
-                    line-height: 1.8em;
-                    margin: 0px 0px 0px 55px;
-                }
-
-            }          
-            .escribinos {                 
-                grid-area: escribinos; 
-                height: 300px;
-                margin-top: 0px;
-                button {
-                    margin-top: 40px;
-                }
-            } 
-            .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -200px;
-                width: 768px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 400px;               
-                    text-align: center;
-                    font-size: 1.8em;
-                    font-weight: 400;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-
-                }
-            }          
-            .formulario { 
-                grid-area: formulario; 
-                margin-top: 0px;
-                margin-bottom: 50px;
-                .formDetalle {
-                    margin-left: 50px;
-                    width: 300px;
-                    .encabezado {
-                        font-size: 2.5em;
-                    }
-                    .form-group { 
-                        .msj {
-                            height: 115px;
-                        }
-                    }    
-                    button {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }  
+            }
         }    
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 0px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        .footerDireccion {
-            text-align: right;
-        }
-        
-    }
-    
-}
-
-@media screen and  (max-width: 768px ) {
-    .navbar-desktop {
-        display: none;
-    }
-    .info {
-        max-width: 768px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 10px 10px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "logo titulo"
-              "presentacion escribinos"
-              "avisoConstruccion avisoConstruccion"
-              "formulario formulario";
-        .logo { 
-                grid-area: logo; 
-                display: flex;
-                align-items: flex-end;            
-                margin: 150px 0px 15px 50px;
-                img {
-                    width: 300px;
-                }
-            }      
-            .titulo { 
-                grid-area: titulo;
-                display: flex;
-                align-items: flex-end;                
-                    h1 { 
-                        width: 100%;  
-                        margin: 0px;         
-                        font-size: 6.5em;
-                        letter-spacing: 0.1em;
-                        .saltoLinea {
-                            padding: 10px 0px;
-                            display: block;
-                        }
-                    }
-            }          
+        .seccion2 { 
+            display: flex;
+            flex-direction: column; 
+            margin: 50px auto;       
+            max-width: 1100px;
+            height: 100%;
+            padding: 60px 100px 25px 100px;       
             .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: 40px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
+                height: 100%;
+                p {                    
+                    font-size: 2.5em;
+                    letter-spacing: 0.03em;
                     line-height: 1.8em;
-                    margin: 0px 0px 0px 55px;
+                    text-align: justify;
                 }
-
-            }          
-            .escribinos {                 
-                grid-area: escribinos; 
-                height: 300px;
-                margin-top: 0px;
-                button {
-                    margin-top: 40px;
-                }
-            } 
-            .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -200px;
-                width: 768px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 400px;               
-                    text-align: center;
-                    font-size: 1.8em;
-                    font-weight: 400;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-
-                }
-            }          
-            .formulario { 
-                grid-area: formulario; 
-                margin-top: 0px;
-                margin-bottom: 50px;
-                .formDetalle {
-                    margin-left: 50px;
-                    width: 300px;
-                    .encabezado {
-                        font-size: 2.5em;
-                    }
-                    .form-group { 
-                        .msj {
-                            height: 115px;
-                        }
-                    }    
-                    button {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }  
-        }    
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 0px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        .footerDireccion {
-            text-align: right;
-        }
-        
-    }
-}
-    
-
-@media screen and (max-width:424px) {
-    .navbar-desktop {
-        display: none;
-    }
-    .info {
-        max-width: 424px;        
-        .presentacionPancito {  
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 0.5fr 1fr 0.5fr 0.75fr 0.75fr;
-            gap: 10px 10px;
-            grid-auto-flow:row;
-            grid-template-areas:
-            "logo"
-            "titulo"
-            "presentacion"
-            "escribinos"
-            "avisoConstruccion"
-            "formulario";
-        .logo { 
-                grid-area: logo;             
-                margin: 150px 0px 25px 30px;
-                img {
-                    width: 300px;
-                }
-            }      
-            .titulo { 
-                grid-area: titulo;
-                height: 300px;
-                    h1 {            
-                        font-size: 6em;
-                        letter-spacing: 0.1em;
-                        margin: 0px 0px 0px 35px;
-                        padding: 10px 0px;
-                        .saltoLinea {
-                            padding: 10px 0px;
-                            display: block;
-                        }
-                    }
-            }          
-            .presentacion { 
-                grid-area: presentacion;
-                height: 300px;
-                margin-top: -20px;
-                p {
-                    width: 290px;
-                    font-size: 1.8em;
-                    line-height: 1.8em;
-                    margin: 0px 0px 0px 35px;
-                }
-
-            }          
+            }             
             .escribinos { 
-                height: 100px;
-                grid-area: escribinos; 
-                margin-top: -280px;
-                button {
-                    margin-left: 35px;
-                }
+                margin-top: 20px;               
             } 
+        } 
+        .seccion3 {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            width: 100%;            
+            padding-top: 130px;            
             .avisoConstruccion { 
-                grid-area: avisoConstruccion;
-                margin-top: -450px;
-                width: 425px;
-                height: 600px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    width: 300px;
-                    margin-top: -60px;                
+                width: 100%;
+                height: 700px; 
+                padding: 100px 100px 0px 100px;
+                p { 
+                    display: flex;
+                    flex-direction: column;
+                    margin: 50px auto;
+                    width: 600px;                                                     
+                    text-align: center;
+                    font-size: 2em;
+                    font-weight: 400;
+                    line-height: 2;
+                    .salto-linea {
+                        display: block;
+                    }
+                    .avisoTamaño {
+                        font-size: 1.9em;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .formulario { 
+                width: 500px;                 
+                margin-top: 100px;
+                padding: 0px 25px 25px 25px;
+                .formDetalle {                    
+                    .encabezado {
+                        font-size: 2.5em;
+                    }
+                    .form-group {
+                        input {
+                            width: 400px;
+                        } 
+                        .msj {
+                            height: 115px;
+                            width: 400px;
+                        }
+                    }    
+                    button {
+                        margin: 25px 0px 30px;
+                        padding: 15px;
+                    }
+                }
+            }
+        }    
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 30px 100px 0px 100px;
+        .saltoLinea {
+            display: block;
+            padding-top: 15px 0px;
+        }
+        .tituloFooter {
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .footerDireccion {
+            text-align: right;
+        }   
+    } 
+    
+}
+
+@media screen and  (min-width: 768px ) and (max-width: 1023px) {
+    .mainHeader  {
+        padding: 0 50px;
+        .logo {
+            font-size: 1.6em;
+        }
+        ul li {
+            font-size: 1em;
+        }
+    } 
+    .hamburger {
+        display: none;
+    }
+    .info {                
+        .seccion1 {  
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+            width: 100%;            
+            padding: 150px 40px 0px 50px;
+            .logo { 
+                //padding-right: 75px;               
+                img {
+                    width: 100%;                    
+                }                
+            }      
+            .titulo {                
+                height: 100%;
+                //padding: 0px 0px 0px 30px;
+                    h1 { 
+                        width: 100%;           
+                        font-size: 5.5em;                      
+                        padding: 0px 5px;
+                        .saltoLinea {
+                            padding: 10px 0px;
+                            display: block;
+                        }
+                    }
+            }
+        }    
+        .seccion2 { 
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            height: 100%;
+            padding: 60px 100px 25px 100px;       
+            .presentacion { 
+                height: 100%;
+                p {                    
+                    font-size: 1.8em;
+                    line-height: 1.8em;
+                }
+            }             
+            .escribinos { 
+                margin-top: 20px;               
+            } 
+        } 
+        .seccion3 {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            width: 100%;            
+            padding-top: 100px;            
+            .avisoConstruccion { 
+                width: 100%;
+                height: 600px; 
+                padding: 100px 100px 0px 100px;
+                p {                                                      
                     text-align: center;
                     font-size: 1.8em;
                     font-weight: 400;
@@ -343,20 +213,144 @@
                     .salto-linea {
                         display: block;
                     }
-
+                    .avisoTamaño {
+                        font-size: 1.9em;
+                        font-weight: 700;
+                    }
                 }
-            }          
+            }              
             .formulario { 
-                grid-area: formulario; 
-                margin-top: -100px;
-                .formDetalle {
-                    margin-left: 35px;
-                    width: 300px;
+                width: 100%;                 
+                margin-top: 100px;
+                padding: 0px 25px 25px 100px;
+                .formDetalle {                    
                     .encabezado {
                         font-size: 2.5em;
                     }
                     .form-group { 
+                        input {
+                            width: 400px;
+                        }
                         .msj {
+                            height: 115px;
+                            width: 400px;
+                        }
+                    }    
+                    button {
+                        margin: 25px 0px 30px;
+                        padding: 15px;
+                    }
+                }
+            }
+        }      
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 30px 50px 0px 50px;
+        .saltoLinea {
+            display: block;
+            padding-top: 15px 0px;
+        }
+        .tituloFooter {
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        .tituloFooter {
+            font-weight: 500;
+        }
+        .footerDireccion {
+            text-align: right;
+        }
+            
+    } 
+}
+    
+@media screen and (max-width:767px) {
+    .mainHeader  {
+        padding: 0 50px;
+        .logo {
+            font-size: 1.3em;
+        }
+        .navbar-desktop {
+            display: none;
+        }
+    }    
+    .info {                
+        .seccion1 {  
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 150px 20px 0px 20px;      
+            .titulo { 
+                width: 100%;
+                height: 100%;
+                padding-top: 40px;
+                    h1 {            
+                        font-size: 5em;                      
+                        padding: 0px 5px;
+                        .saltoLinea {
+                            padding: 10px 0px;
+                            display: block;
+                        }
+                    }
+            }
+        }    
+        .seccion2 { 
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            padding: 0px 50px 25px 25px;       
+            .presentacion { 
+                height: 300px;
+                p {                    
+                    font-size: 1.8em;
+                    line-height: 1.8em;
+                }
+            }             
+            .escribinos { 
+                margin-top: auto;               
+            } 
+        } 
+        .seccion3 {
+            display: flex;
+            flex-direction: column;              
+            width: 100%;            
+            padding-top: 50px;            
+            .avisoConstruccion { 
+                width: 100%;
+                height: 600px;                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    padding: 0px 25px 25px 25px;                                    
+                    text-align: center;
+                    font-size: 1.7em;
+                    font-weight: 400;
+                    line-height: 2;
+                    .salto-linea {
+                        display: block;
+                    }
+                }
+            }             
+            .formulario { 
+                width: 100%;                 
+                margin-top: 100px;
+                padding: 0px 50px 25px 25px;
+                .formDetalle {                                        
+                    .encabezado {
+                        font-size: 2.5em;
+                    }
+                    .form-group {
+                        input {
+                            width: 270px;
+                        } 
+                        .msj {
+                            width: 270px;
                             height: 115px;
                         }
                     }    
@@ -365,12 +359,12 @@
                         padding: 15px;
                     }
                 }
-            }  
-        }    
+            }
+        }      
     }
     .footer {
         height: 180px;
-        padding: 30px 0px 0px 35px;
+        padding: 30px 0px 0px 25px;
         .saltoLinea {
             display: block;
             padding-top: 15px 0px;
@@ -384,509 +378,6 @@
         .tituloFooter {
             font-weight: 500;
         }
-        
-    }
+            
+    }    
 }
-
-
-
-/*
-@media screen and (max-width: 424px){ /*movil
-    body {
-        .navbar {
-            padding: 20px 0px 25px;
-            font-size: 0.5rem;
-            position: fixed;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            .navbar-brand {
-                 width: 140px;
-                 margin-left: 27px;            
-            }
-             .navbar-toggler {
-                 background-color: #0000FF;
-                 margin: -10px 15px 0px 0px;
-            }
-            .navbar-nav {
-                 font-size: 1rem;
-                 padding: 10px 0px 20px 27px;
-                 .nav-item {
-                    padding: 15px 0px 0px;
-                }
-                img {
-                    
-                    width: 20px;
-                }
-            }
-             .navbar-link {
-                 padding: 0px;
-            }
-        }
-        .info {
-            overflow: hidden;
-            .presentacionPancito {
-                margin-top: 50px;
-                padding-bottom: 60px;   
-                .logo {
-                    display: flex;
-                    justify-content:left;                    
-                    margin: 110px 40px 20px 30px;
-                }
-                h1 {                    
-                    width: 100%;
-                    margin: 0px 0px 20px 40px;
-                    padding: 10px 0px;
-                    font-size: 5.5em;
-                    text-align: left;
-                    }
-                .presentacion {
-                    width: 300px;
-                    margin: 0px 0px 50px 40px;
-                    padding: 0px;
-                    font-size: 1.9em;
-                    line-height: 2;
-                } 
-                .escribinos {
-                    margin: 0px 0px 0px 40px;
-                    padding: 15px;
-                }
-            }
-            .informacionPancito {
-                margin-top: 100px;
-                .avisoConstruccion {                    
-                    height: 600px;
-                    padding: 60px 40px 60px;
-                    text-align: left;
-                    font-size: 2em;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-                }
-                .container {
-                    width: 300px;
-                    padding: 0px;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: 50px 0px 10px 40px;
-                    .encabezado {
-                        text-align: left;
-                        font-size: 2em;
-                    }
-                    .form-group {
-                        width: 300px;
-                        border: 1px solid #0000FF;
-                    }
-                    .btn {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }
-        }    
-    } 
-    .relleno {
-        background-color: #0000ff;
-        height: 250px;
-        margin-top: -170px;
-    }
-    .footer {
-        height: 180px;
-        padding: 30px 0px 0px 40px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        
-    }
-}   
-
-@media screen and (min-width: 425px) and (max-width: 767px ) { /*tablet
-    body {
-        .navbar {
-            padding: 20px 0px 25px;
-            font-size: 0.5rem;
-            position: fixed;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            .navbar-brand {
-                 width: 140px;
-                 margin-left: 27px;            
-            }
-             .navbar-toggler {
-                 background-color: #0000FF;
-                 margin: -10px 15px 0px 0px;
-            }
-            .navbar-nav {
-                 font-size: 1rem;
-                 padding: 10px 0px 20px 27px;
-                 .nav-item {
-                    padding: 15px 0px 0px;
-                }
-                img {
-                    
-                    width: 20px;
-                }
-            }
-             .navbar-link {
-                 padding: 0px;
-            }
-        }
-        .info {
-            overflow: hidden;
-            .presentacionPancito {
-                margin-top: 50px;
-                padding-bottom: 60px;   
-                .logo {
-                    width: 300px;
-                    display: flex;
-                    justify-content:left;                    
-                    margin: 110px 40px 20px 30px;
-                }
-                h1 {                    
-                    width: 300px;
-                    margin: 0px 0px 20px 40px;
-                    padding: 10px 0px;
-                    font-size: 5.5em;
-                    text-align: left;
-                    }
-                .presentacion {
-                    width: 300px;
-                    margin: 0px 0px 50px 40px;
-                    padding: 0px;
-                    font-size: 1.9em;
-                    line-height: 2;
-                } 
-                .escribinos {
-                    margin: 0px 0px 0px 40px;
-                    padding: 15px;
-                }
-            }
-            .informacionPancito {
-                margin-top: 100px;
-                .avisoConstruccion {
-                    
-                    height: 600px;
-                    padding: 60px 40px 60px;
-                    text-align: left;
-                    font-size: 2em;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-                }
-                .container {
-                    width: 300px;
-                    padding: 0px;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: 50px 0px 10px 40px;
-                    .encabezado {
-                        text-align: left;
-                        font-size: 2em;
-                    }
-                    .form-group {
-                        width: 300px;
-                        border: 1px solid #0000FF;
-                    }
-                    .btn {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }
-        }    
-    } 
-    .relleno {
-        background-color: #0000ff;
-        height: 250px;
-        margin-top: -170px;
-    }
-    .footer {
-        height: 180px;
-        padding: 30px 0px 0px 40px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        
-    }
-}   
-
-@media screen and (min-width: 768px) and (max-width: 1024px ) { /*laptop
-    body {
-        .navbar {
-            padding: 20px 0px 0px;
-            font-size: 0.5rem;
-            position: fixed;
-            z-index: 100;           
-            .navbar-brand {
-                 width: 140px;
-                 margin-left: 50px;            
-            }
-             .navbar-toggler {
-                 background-color: #0000FF;
-                 margin: -10px 15px 0px 0px;
-            }
-            .navbar-nav {
-                align-items: center;
-                 font-size: 1rem;
-                 padding: 10px 0px 20px 300px;
-                 .nav-item {                    
-                    padding: 15px 0px 0px;
-                }
-                img {
-                    margin-bottom: 0px;
-                    width: 20px;
-                }
-            }
-             .navbar-link {
-                 padding: 0px;
-            }
-        }
-        .info {
-            overflow: hidden;
-            .presentacionPancito {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                margin-top: 50px;
-                padding-bottom: 0px;   
-                .logo {
-                    width: 300px;                    
-                    margin: 110px 20px 20px 90px;
-                }
-                h1 {                    
-                    width: 300px;
-                    margin: 250px 0px 20px 40px;
-                    padding: 10px 0px;
-                    font-size: 5.5em;
-                    text-align: left;
-                    }
-                .presentacion {
-                    width: 300px;
-                    margin: 0px 0px 50px 80px;
-                    padding: 0px;
-                    font-size: 1.9em;
-                    line-height: 2;
-                } 
-                .escribinos {
-                    height: 50px;
-                    margin: 10px 160px 0px 0px;
-                    padding: 15px;
-                }
-            }
-            .informacionPancito {
-                margin-top: 100px;
-                display: block;
-                .avisoConstruccion {                    
-                    width: 550px;
-                    height: 400px;
-                    margin:  auto;
-                    padding: 60px 40px 60px;
-                    text-align: center;
-                    font-size: 2em;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-                }
-                .container {
-                    width: 300px;
-                    padding: 0px;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: auto;
-                    .encabezado {
-                        text-align: center;
-                        font-size: 2em;
-                    }
-                    .form-group {
-                        width: 300px;
-                        border: 1px solid #0000FF;
-                    }
-                    .btn {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }
-        }    
-    } 
-    .relleno {
-        background-color: #0000ff;
-        height: 250px;
-        margin-top: -170px;
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 40px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        
-    }
-}   
-@media screen and (min-width: 1025px){
-    body {
-        .navbar {
-            padding: 20px 0px 0px;
-            font-size: 0.5rem;
-            position: fixed;
-            z-index: 100;           
-            .navbar-brand {
-                 width: 140px;
-                 margin-left: 100px;            
-            }
-             .navbar-toggler {
-                 background-color: #0000FF;
-                 margin: -10px 15px 0px 0px;
-            }
-            .navbar-collapse {
-                display: flex;
-                justify-content: flex-end;
-                margin-right: 100px;
-            }
-            .navbar-nav {
-                align-items: center;
-                font-size: 1rem;
-                padding: 10px 0px 20px 300px;
-                 .nav-item {                    
-                    padding: 15px 0px 0px;
-                }
-                img {
-                    margin-bottom: 0px;
-                    width: 20px;
-                }
-            }
-             .navbar-link {
-                 padding: 0px;
-            }
-        }
-        .info {
-            overflow: hidden;
-            .presentacionPancito {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                margin-top: 50px;
-                padding-bottom: 0px;   
-                .logo {
-                    width: 350px;                    
-                    margin: 130px 20px 0px 200px;
-                }
-                h1 {                    
-                    width: 300px;
-                    margin: 300px 300px 0px 0px;
-                    padding: 10px 0px;
-                    font-size: 6.5em;
-                    text-align: left;
-                    }
-                .presentacion {
-                    width: 300px;
-                    margin: 0px 0px 50px 180px;
-                    padding: 0px;
-                    font-size: 1.9em;
-                    line-height: 2;
-                } 
-                .escribinos {
-                    height: 50px;
-                    margin: 10px 430px 0px 0px;
-                    padding: 15px;
-                }
-            }
-            .informacionPancito {
-                margin-top: 100px;
-                display: block;
-                .avisoConstruccion {                    
-                    width: 550px;
-                    height: 400px;
-                    margin:  auto;
-                    padding: 60px 40px 60px;
-                    text-align: center;
-                    font-size: 2em;
-                    line-height: 2;
-                    .salto-linea {
-                        display: block;
-                    }
-                }
-                .container {
-                    width: 300px;
-                    padding: 0px;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: auto;
-                    .encabezado {
-                        text-align: center;
-                        font-size: 2em;
-                    }
-                    .form-group {
-                        width: 300px;
-                        border: 1px solid #0000FF;
-                    }
-                    .btn {
-                        margin: 25px 0px 30px;
-                        padding: 15px;
-                    }
-                }
-            }
-        }    
-    } 
-    .relleno {
-        background-color: #0000ff;
-        height: 250px;
-        margin-top: -170px;
-    }
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 120px;
-        padding: 30px 0px 0px 40px;
-        .saltoLinea {
-            display: block;
-            padding-top: 15px 0px;
-        }
-        .tituloFooter {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 5px;
-        }
-        .tituloFooter {
-            font-weight: 500;
-        }
-        
-    }
-}*/
