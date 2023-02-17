@@ -95,9 +95,11 @@
     font-weight: 700;
   }
   .info .seccion3 .formulario {
-    width: 500px;
-    margin-top: 100px;
-    padding: 0px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 250px auto 0;
+    padding: 0px 450px 25px 0px;
   }
   .info .seccion3 .formulario .formDetalle .encabezado {
     font-size: 2.5em;
@@ -289,15 +291,12 @@
     width: 100%;
     padding: 0px 50px 25px 25px;
   }
-  .info .seccion2 .presentacion {
-    height: 300px;
-  }
   .info .seccion2 .presentacion p {
     font-size: 1.8em;
     line-height: 1.8em;
   }
   .info .seccion2 .escribinos {
-    margin-top: auto;
+    margin-top: 20px;
   }
   .info .seccion3 {
     display: flex;
@@ -326,6 +325,9 @@
     width: 100%;
     margin-top: 100px;
     padding: 0px 50px 25px 25px;
+  }
+  .info .seccion3 .formulario .formDetalle {
+    width: 270px;
   }
   .info .seccion3 .formulario .formDetalle .encabezado {
     font-size: 2.5em;
@@ -389,7 +391,7 @@ body .mobileMainMenu ul {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 100px 0px 20px 40px;
+  padding: 100px 0px 20px 50px;
   width: 100%;
 }
 body .mobileMainMenu ul li {
@@ -439,8 +441,8 @@ body .mainHeader ul li a::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  color: red;
+  height: 1px;
+  background: #fff;
   transform: scaleX(0);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: right center;
